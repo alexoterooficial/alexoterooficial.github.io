@@ -56,14 +56,15 @@ footer > p {
 	display: inline-block; 
 }
 
-a.nav_li {
+.menu > li > a{
 	display: block;
+	padding: 15px 20px
 	color: #353535;
 	font-family: 'Algerian';
 	text-decoration: none; 
 }
 
-a.nav_li:hover {
+.menu > li > a:hover {
 	color: #44EFC8;
 	transition: all .5s;
 }
@@ -78,7 +79,7 @@ nav > ul> li {
 }
 
 nav ul li a {
-	text-decoration: none;
+	text-decoration-color: none
 	color: #fff;
 	display: block;
 	padding: 10px 20px;
@@ -102,6 +103,16 @@ a {
   width: 90%;
   margin: auto;
   padding: 50px 0;
+}
+
+.contenido {
+  width: 500px;
+  margin: 20px auto;
+  text-align: justify;
+}
+
+.contenido p{
+  margin-bottom: 1em;
 }
 
 .ir-arriba {
@@ -140,80 +151,6 @@ nav {
   -webkit-box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
           box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
 }
-
-/* Menú responsive */
-
-@media(max-width: 711px){
-  header {
-    display: none;
-  }
-
-  .icono-menu {
-    display: block;
-  }
-
-  li > a:hover {
-    color: #44EFC8;
-    transition: all .5s;
-  }
-
-  h1 {
-    margin: 10px 40px;
-    width: 200px;
-  }
-}
-
-@media(min-width: 712px){
-  .icono-menu {
-    display: none;
-  }
-}
-
-.icono-menu {
-  background: #fff;
-  padding: 40px 50px;
-  position: relative;
-  z-index: 10;
-}
-
-.icono-menu img {
-  vertical-align: top;
-  width: 40px;
-  cursor: pointer;
-}
-
-.cont-menu {
-  background-color: #222;
-  width: 400px;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: all .5s ease;
-}
-
-.active_menu{
-  transform: translate(-600px);
-}
-
-.opacity {
-  transition: all .5s ease;
-}
-
-.cont-menu ul {
-  padding: 100px 0px 20px 0px;
-  list-style: none;
-}
-
-.cont-menu ul li {
-  color: #fff;
-  display: block;
-  font-size: 25px;
-  text-decoration: none;
-  margin: 10px 50px;
-}
-
-/* Menú responsive */
   
 
 /*Esta página ha sido programada por Alex Otero. Todos los derechos son reservados*/
