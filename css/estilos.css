@@ -1,0 +1,219 @@
+/*Esta página ha sido programada por Alex Otero. Todos los derechos son reservados*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  outline-color: none;
+  outline-style: none;
+  outline-width: unset;
+  outline-width: unset;
+}
+
+h1 > a:hover{
+  color: #44EFC8;
+  transition: all .5s;
+}
+
+h2,h3,h4,h5,h6 {
+  font-family: 'Algerian'
+}
+
+body {
+	background:#44EFC8;
+	color: #000000;
+}
+
+footer {
+  padding: 38px 0px;
+  text-align: justify;
+  background: #409E98;
+}
+
+footer > p {
+  width: 500px;
+  margin: 20px auto;
+  color: #fff;
+}
+
+.navegacion{
+	width: 70%;
+	margin: 198px auto;
+	background: #fff;
+	font-family: 'Algerian'
+}
+
+.navegacion ul {
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block; 
+}
+
+a.nav_li {
+	display: block;
+	color: #353535;
+	font-family: 'Algerian';
+	text-decoration: none; 
+}
+
+a.nav_li:hover {
+	color: #44EFC8;
+	transition: all .5s;
+}
+
+li.tsuki > a:hover {
+  color: #EA45F0;
+}
+
+
+nav > ul> li {
+	float: left;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	padding: 10px 20px;
+}
+
+body {
+  background: #44EFC8;
+  font-family: 'Arial', sans-serif;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+a {
+  color: #222222;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contenedor {
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+  padding: 50px 0;
+}
+
+.ir-arriba {
+  display: none;
+  padding: 20px;
+  background: #207E7A;
+  font-size: 20px;
+  color: #FFF;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+::selection {
+  background: #207E7A;
+  color: #fff;
+}
+
+nav {
+  background: #FEFEFE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 20px;
+  border-radius: 5px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  -webkit-box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
+          box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
+}
+
+/* Menú responsive */
+
+@media(max-width: 711px){
+  header {
+    display: none;
+  }
+
+  .icono-menu {
+    display: block;
+  }
+
+  li > a:hover {
+    color: #44EFC8;
+    transition: all .5s;
+  }
+
+  h1 {
+    margin: 10px 40px;
+    width: 200px;
+  }
+}
+
+@media(min-width: 712px){
+  .icono-menu {
+    display: none;
+  }
+}
+
+.icono-menu {
+  background: #fff;
+  padding: 40px 50px;
+  position: relative;
+  z-index: 10;
+}
+
+.icono-menu img {
+  vertical-align: top;
+  width: 40px;
+  cursor: pointer;
+}
+
+.cont-menu {
+  background-color: #222;
+  width: 400px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .5s ease;
+}
+
+.active_menu{
+  transform: translate(-600px);
+}
+
+.opacity {
+  transition: all .5s ease;
+}
+
+.cont-menu ul {
+  padding: 100px 0px 20px 0px;
+  list-style: none;
+}
+
+.cont-menu ul li {
+  color: #fff;
+  display: block;
+  font-size: 25px;
+  text-decoration: none;
+  margin: 10px 50px;
+}
+
+/* Menú responsive */
+  
+
+/*Esta página ha sido programada por Alex Otero. Todos los derechos son reservados*/

@@ -1,0 +1,142 @@
+div.social_media_buttons {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+*:focus {
+  outline: none;
+  outline-color: none;
+  outline-style: none;
+  outline-width: unset;
+  outline-width: unset;
+}
+
+div.social_media_buttons{
+  bottom: 0px;
+  right: 10px;
+  display: grid;
+  height: 520px;
+  width: 80px;
+  position: fixed;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+
+img.tsuki {
+  margin: 15px;
+  transition: 0.3s;
+  height: 30px;
+}
+
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  background: #fff;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+
+.wrapper .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+
+.wrapper .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+
+.wrapper .button:nth-child(4):hover .icon{
+  background: #000000;
+}
+
+.wrapper .button:nth-child(5):hover .icon{
+  background: #ff0000;
+}
+
+.wrapper .button:nth-child(6):hover .icon{
+  background: #EA45F0;
+}
+
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1) span{
+  color: #4267B2;
+}
+
+.wrapper .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+
+.wrapper .button:nth-child(3) span{
+  color: #E1306C;
+}
+
+.wrapper .button:nth-child(4) span{
+  color: #000000;
+}
+
+.wrapper .button:nth-child(5) span{
+  color: #ff0000;
+}
+
+div.icon {
+  color: #000000;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
