@@ -67,21 +67,20 @@
     		</div>
     	</div>
 
-		<section class="contenido"></section>
 		<nav class="navegacion">
 			<ul class="menu">
 
 				<img src="imágenes\Alex_Otero-Logo.png" width="100" alt="Logo">
 
-				<h1><a href="index.html">>Alex Otero<</a></h1>
+				<h1><a class="nav_li" href="index.html">>Alex Otero<</a></h1>
 
-				<li><a href="Inicio.html"><i class=""></i> Inicio</a></li>
+				<li><a class="nav_li" href="Inicio.html"> Inicio</a></li>
 
-				<li><a href="sobre_mi.html"><i class=""></i> Sobre mí</a></li>
+				<li><a class="nav_li" href="sobre_mi.html"> Sobre mí</a></li>
 
-				<li class="tsuki"><a href="tsuki.html"><i class=""></i> Tsuki</a></li>
+				<li class="tsuki"><a class="nav_li" href="tsuki.html"> Tsuki</a></li>
 
-				<li><a href="galeria.html"><i class=""></i> Galería</a></li>
+				<li><a class="nav_li" href="galeria.html"> Galería</a></li>
 
 				<button class="switch" id="switch">
 					<span><i class="fas fa-sun"></i></span>
@@ -92,9 +91,41 @@
 		</nav>
 
 	</header>
+
+	<div class="icono-menu">
+		<img src="imágenes/open-menu2.png" id="icono-menu">
+		<img src="imágenes\Alex_Otero-Logo.png" alt="Logo" class="menu_logo">
+	</div>
+
+	<div class="cont-menu active_menu" id="menu">
+		<ul>
+
+			<h1><a class="nav_li" href="index.html">Alex Otero</a></h1>
+
+			<li><a class="nav_li" href="Inicio.html"> Inicio</a></li>
+
+			<li><a class="nav_li" href="sobre_mi.html"> Sobre mí</a></li>
+
+			<li class="tsuki"><a class="nav_li" href="tsuki.html"> Tsuki</a></li>
+
+			<li><a class="nav_li" href="galeria.html"> Galería</a></li>
+
+			<button class="switch" id="switch">
+				<span><i class="fas fa-sun"></i></span>
+				<span><i class="fas fa-moon"></i></span>
+			</button>
+
+		</ul>
+	</div>
+
+	<script src="js/burger.js"></script>
 		
 	<body>
+
 		<div class="ir-arriba icon-circle-up"></div>
+
+		<!-- p>lorem*25 -->
+
 	</body>
 
 	<footer>

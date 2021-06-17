@@ -1,0 +1,23 @@
+Problemas de la página:
+
+1. El modo oscuro del botón hamburguesa no cambia de color 
+como debe
+
+3. Si el menú desplegable está abierto y ya no está el 
+tamaño de 711px el menú no se oculta, se queda abierto
+
+4. Cuando se abre el menú desplegable, el logo de la barra
+se tiene que ocultar y cambiar al menú
+
+5. El logo del menú desplegable debe ir al centro
+
+6. El botón de modo oscuro de el menú desplegable no sirve
+
+7. El botón hamburguesa está más arriba que el logo de la
+barra
+
+8. No he puesto los botones de redes sociales
+
+Notas (16/06/2021): Hice el menú desplegable el cual tiene
+algunas fallas. Me quedé arreglando el footer, el cual
+tiene que ir con un bottom: 0;

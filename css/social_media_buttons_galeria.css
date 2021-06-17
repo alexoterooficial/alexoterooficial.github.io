@@ -20,6 +20,7 @@ div.social_media_buttons{
   height: 520px;
   width: 80px;
   position: fixed;
+  z-index: 1;
 }
 
 .wrapper {

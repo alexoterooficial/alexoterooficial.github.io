@@ -24,14 +24,17 @@ h2,h3,h4,h5,h6 {
 }
 
 body {
-	background:#44EFC8;
-	color: #000000;
+  background:#44EFC8;
+  color: #000000;
 }
 
 footer {
   padding: 38px 0px;
   text-align: justify;
   background: #409E98;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 footer > p {
@@ -41,32 +44,31 @@ footer > p {
 }
 
 .navegacion{
-	width: 70%;
-	margin: 198px auto;
-	background: #fff;
-	font-family: 'Algerian'
+  width: 70%;
+  margin: 198px auto;
+  background: #fff;
+  font-family: 'Algerian'
 }
 
 .navegacion ul {
-	list-style: none;
+  list-style: none;
 }
 
 .menu > li{
-	position: relative;
-	display: inline-block; 
+  position: relative;
+  display: inline-block; 
 }
 
-.menu > li > a{
-	display: block;
-	padding: 15px 20px
-	color: #353535;
-	font-family: 'Algerian';
-	text-decoration: none; 
+a.nav_li {
+  display: block;
+  color: #353535;
+  font-family: 'Algerian';
+  text-decoration: none; 
 }
 
-.menu > li > a:hover {
-	color: #44EFC8;
-	transition: all .5s;
+a.nav_li:hover {
+  color: #44EFC8;
+  transition: all .5s;
 }
 
 li.tsuki > a:hover {
@@ -75,14 +77,14 @@ li.tsuki > a:hover {
 
 
 nav > ul> li {
-	float: left;
+  float: left;
 }
 
 nav ul li a {
-	text-decoration-color: none
-	color: #fff;
-	display: block;
-	padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 10px 20px;
 }
 
 body {
@@ -105,16 +107,6 @@ a {
   padding: 50px 0;
 }
 
-.contenido {
-  width: 500px;
-  margin: 20px auto;
-  text-align: justify;
-}
-
-.contenido p{
-  margin-bottom: 1em;
-}
-
 .ir-arriba {
   display: none;
   padding: 20px;
@@ -125,6 +117,7 @@ a {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  z-index: 1;
 }
 
 
@@ -151,6 +144,89 @@ nav {
   -webkit-box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
           box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
 }
+
+/* Menú responsive */
+
+@media(max-width: 711px){
+  header {
+    display: none;
+  }
+
+  .icono-menu {
+    display: block;
+  }
+
+  li > a:hover {
+    color: #44EFC8;
+    transition: all .5s;
+  }
+
+  h1 {
+    margin: 10px 40px;
+    width: 200px;
+  }
+}
+
+@media(min-width: 712px){
+  .icono-menu {
+    display: none;
+  }
+}
+
+.icono-menu {
+  background: #fff;
+  padding: 10px 50px;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 10px 20px -15px #777;
+}
+
+.icono-menu img {
+  vertical-align: top;
+  width: 40px;
+  cursor: pointer;
+  margin: 20px 0px 0px 0px;
+}
+
+.cont-menu {
+  background-color: #fff;
+  width: 400px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .5s ease;
+  box-shadow: 10px 0px 20px -15px #111;
+}
+
+.active_menu{
+  transform: translate(-600px);
+}
+
+.opacity {
+  transition: all .5s ease;
+}
+
+.cont-menu ul {
+  padding: 150px 0px 20px 0px;
+  list-style: none;
+}
+
+.cont-menu ul li {
+  color: #fff;
+  display: block;
+  font-size: 25px;
+  text-decoration: none;
+  margin: 10px 50px;
+}
+
+img.menu_logo {
+  margin: -70px 40%;
+  height: 100px;
+  width: 100px;
+}
+
+/* Menú responsive */
   
 
 /*Esta página ha sido programada por Alex Otero. Todos los derechos son reservados*/
