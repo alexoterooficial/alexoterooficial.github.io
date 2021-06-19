@@ -175,5 +175,10 @@ nav .enlaces a {
 
 button#switch.switch {
   left: 3%;
-  margin: 0% 35%;
+  margin: 0.5%;
+}
+
+div.icono-menu > button#switch.switch {
+  position: absolute;
+  margin: 7px 80%;
 }
