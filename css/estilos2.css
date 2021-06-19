@@ -103,6 +103,15 @@ body.dark .cont-menu {
   box-shadow: 12px 0px 20px -15px #111;
 }
 
+body.dark .burger_line {
+  stroke: #fff;
+}
+
+body.dark .cont-menu > .social_media_buttons > .wrapper .button .icon {
+  background: #fff;
+  color: #000;
+}
+
 nav .enlaces {
   display: -webkit-box;
   display: -ms-flexbox;

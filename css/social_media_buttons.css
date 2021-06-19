@@ -13,7 +13,7 @@ div.social_media_buttons {
   outline-width: unset;
 }
 
-div.social_media_buttons{
+header div.social_media_buttons{
   bottom: 0px;
   display: grid;
   height: 520px;
@@ -134,3 +134,52 @@ a:hover {
 a:active {
   text-decoration: none;
 }
+
+
+/* Menú desplegable */
+
+.cont-menu > div.social_media_buttons {
+  bottom: 0;
+  display: grid;
+  position: fixed;
+  z-index: 1;
+  margin: 20px 70px;
+
+}
+
+.cont-menu > div.social_media_buttons > .wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.cont-menu > div.social_media_buttons >.wrapper:nth-child(1) .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+
+.cont-menu > div.social_media_buttons >.wrapper:nth-child(1) .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+
+.cont-menu > div.social_media_buttons >.wrapper:nth-child(1) .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+
+.cont-menu > div.social_media_buttons >.wrapper:nth-child(2) .button:nth-child(1):hover .icon{
+  background: #000000;
+}
+
+.cont-menu > div.social_media_buttons >.wrapper:nth-child(2) .button:nth-child(2):hover .icon{
+  background: #ff0000;
+}
+
+.cont-menu > div.social_media_buttons >.wrapper:nth-child(2) .button:nth-child(3):hover .icon{
+  background: #EA45F0;
+}
+
+.cont-menu > div.social_media_buttons >.wrapper .button .icon {
+  background: #222;
+  color: #fff;
+}
+
+
+/* Menú desplegable */
