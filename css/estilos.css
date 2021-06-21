@@ -32,7 +32,7 @@ footer {
   padding: 38px 0px;
   text-align: justify;
   background: #409E98;
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
@@ -156,6 +156,10 @@ nav {
     display: block;
   }
 
+  .slider {
+    display: block;
+  }
+
   li > a:hover {
     color: #44EFC8;
     transition: all .5s;
@@ -165,10 +169,15 @@ nav {
     margin: 10px 40px;
     width: 200px;
   }
+
 }
 
 @media(min-width: 712px){
   .icono-menu {
+    display: none;
+  }
+
+  .slider {
     display: none;
   }
 }
@@ -181,6 +190,7 @@ nav {
   z-index: 10;
   transition: all .3s ease;
   box-shadow: 0 10px 20px -15px #777;
+  top: 0;
 }
 
 .icono-menu svg {
@@ -241,6 +251,22 @@ img.menu_logo {
 }
 
 /* Menú responsive */
+
+/* Slider */
+
+.slider {
+  margin: 115px 27%;
+}
+
+.slider > ul > li {
+  list-style: none;
+}
+
+.slider > ul > li > img {
+  height: 300px;
+}
+
+/* Slider */
   
 
 /*Esta página ha sido programada por Alex Otero. Todos los derechos son reservados*/

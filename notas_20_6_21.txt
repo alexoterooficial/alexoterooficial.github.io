@@ -1,0 +1,24 @@
+Problemas de la página:
+
+1. Si el menú desplegable está abierto y ya no está el 
+tamaño de 711px el menú no se oculta, se queda abierto
+
+2. El botón de modo oscuro del menú desplegable funciona
+pero sólo si se quita el del menú normal
+
+3. Faltan todos los estilos del slider
+
+4. Una vez hecho el slider: Cambiar la posición del footer
+de absolute a relative.
+
+5. Poner este código en el head de cada HTML:
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+6. Poner la redirección 301
+
+7. Una vez subida la página: Cambiar todas las rutas de
+imágenes, links y href por el url de la página y el nombre
+del archivo.
+
+Notas (20/06/2021): Estoy haciendo un slider, al cual le
+faltan todos los estilo de animación.
