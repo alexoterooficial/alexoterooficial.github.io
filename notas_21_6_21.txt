@@ -20,5 +20,4 @@ de absolute a relative.
 imágenes, links y href por el url de la página y el nombre
 del archivo.
 
-Notas (20/06/2021): Estoy haciendo un slider, al cual le
-faltan todos los estilo de animación.
+Notas (21/06/2021): Falta el marco del slider.

@@ -256,14 +256,46 @@ img.menu_logo {
 
 .slider {
   margin: 115px 27%;
+  width: 300px;
+  overflow: hidden;
 }
 
-.slider > ul > li {
+.slider > ul {
   list-style: none;
+  width: 2400px;
+  display: flex;
+
+  animation: slide 40s infinite;
 }
 
 .slider > ul > li > img {
   height: 300px;
+}
+
+@keyframes slide {
+  0% {margin-left: 0px;}
+  6.25% {margin-left: 0px;}
+
+  12.50% {margin-left: -300px;}
+  18.75% {margin-left: -300px;}
+
+  25% {margin-left: -600px;}
+  31.25% {margin-left: -600px;}
+
+  37.50% {margin-left: -900px;}
+  43.75% {margin-left: -900px;}
+
+  50% {margin-left: -1200px}
+  56.25% {margin-left: -1200px;}
+
+  62.50% {margin-left: -1500px;}
+  68.75% {margin-left: -1500px;}
+
+  75% {margin-left: -1800px;}
+  81.25% {margin-left: -1800px}
+
+  87.50% {margin-left: -2100px;}
+  93.75% {margin-left: -2100px;}
 }
 
 /* Slider */
