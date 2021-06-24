@@ -1,4 +1,6 @@
-@font-face {
-  font-family: Algerian;
-  src: local(Algerian), local("ALGER"), url(C:\Users\Alex Otero\AppData\Local\Microsoft\Windows\Fonts\ALGER.tff)
-}
+/*@font-face {
+  font-family: 'Algerian';
+  src: url('C:/Users/Alex Otero/AppData/Local/Microsoft/Windows/Fonts/ALGER.tff') format("truetrype");
+  font-weight: normal;
+  font-style: normal;
+}*/

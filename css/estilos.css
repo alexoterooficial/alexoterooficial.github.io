@@ -1,4 +1,12 @@
 /*Esta página ha sido programada por Alex Otero. Todos los derechos son reservados*/
+
+@font-face {
+  font-family: 'Algerian';
+  src: url('C:/Users/Alex Otero/AppData/Local/Microsoft/Windows/Fonts/ALGER.tff') format("truetrype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -180,6 +188,11 @@ nav {
   .slider {
     display: none;
   }
+
+  #menu {
+    transform: translate(-600px);
+    transition: all .3s ease;
+  }
 }
 
 .icono-menu {
@@ -257,7 +270,18 @@ img.menu_logo {
 .slider {
   margin: 115px 27%;
   width: 300px;
+  height: 300px;
   overflow: hidden;
+  box-shadow: 1px 1px 0px #333,
+              2px 2px 0px #333,
+              3px 3px 0px #333,
+              4px 4px 0px #333,
+              5px 5px 0px #333,
+              6px 6px 0px #333,
+              7px 7px 0px #333,
+              8px 8px 0px #333,
+              9px 9px 0px #333,
+              11px 11px 10px #000;
 }
 
 .slider > ul {
