@@ -144,6 +144,12 @@ strong {
   right: 20px;
 }
 
+svg.arrow_up {
+  position: relative;
+  display: flex;
+  height: 20px;
+}
+
 ::selection {
   background: #207E7A;
   color: #fff;

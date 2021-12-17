@@ -125,7 +125,7 @@ a {
 .ir-arriba {
   display: none;
   padding: 20px;
-  background: #024959;
+  background: #752078;
   font-size: 20px;
   color: #FFF;
   cursor: pointer;
@@ -134,6 +134,11 @@ a {
   right: 20px;
 }
 
+svg.arrow_up {
+  position: relative;
+  display: flex;
+  height: 20px;
+}
 
 ::selection {
   background: #751B78;

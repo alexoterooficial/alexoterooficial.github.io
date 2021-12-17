@@ -83,7 +83,6 @@ li.tsuki > a:hover {
   color: #EA45F0;
 }
 
-
 nav > ul> li {
   float: left;
 }
@@ -128,6 +127,11 @@ a {
   z-index: 1;
 }
 
+svg.arrow_up {
+  position: relative;
+  display: flex;
+  height: 20px;
+}
 
 ::selection {
   background: #207E7A;

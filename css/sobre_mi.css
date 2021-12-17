@@ -128,6 +128,12 @@ body {
   right: 20px;
 }
 
+svg.arrow_up {
+  position: relative;
+  display: flex;
+  height: 20px;
+}
+
 nav > ul> li {
   float: left;
 }

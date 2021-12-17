@@ -88,6 +88,13 @@ footer > p {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  z-index: 10;
+}
+
+svg.arrow_up {
+  position: relative;
+  display: flex;
+  height: 20px;
 }
 
 nav > ul> li {
