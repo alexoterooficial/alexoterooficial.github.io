@@ -87,36 +87,61 @@ header div.social_media_buttons{
   color: #fff;
 }
 
-.wrapper .button span{
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 60px;
-  margin-left: 10px;
-  transition: all 0.3s ease-out;
-}
-
-.wrapper .button:nth-child(1) span{
-  color: #4267B2;
-}
-
-.wrapper .button:nth-child(2) span{
-  color: #1DA1F2;
-}
-
-.wrapper .button:nth-child(3) span{
-  color: #E1306C;
-}
-
-.wrapper .button:nth-child(4) span{
-  color: #000000;
-}
-
-.wrapper .button:nth-child(5) span{
-  color: #ff0000;
-}
-
 div.icon {
   color: #000000;
+}
+
+.symbols {
+  height: 25px;
+  width: 30px;
+}
+
+i.facebook {
+  height: 56px;
+  width: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i.twitter {
+  height: 59px;
+  width: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i.instagram {
+  height: 59px;
+  width: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i.tiktok {
+  height: 59px;
+  width: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i.youtube {
+  height: 59px;
+  width: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i.tsuki {
+  height: 59px;
+  width: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a:link {
