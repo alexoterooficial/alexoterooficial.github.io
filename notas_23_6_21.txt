@@ -3,9 +3,6 @@ Problemas de la página:
 2. El botón de modo oscuro del menú desplegable funciona
 pero sólo si se quita el del menú normal
 
-5. Poner este código en el head de cada HTML:
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 6. Poner la redirección 301
 
 7. Una vez subida la página: Cambiar todas las rutas de

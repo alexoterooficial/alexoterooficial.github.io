@@ -46,6 +46,8 @@ p {
 }
 
 footer {
+  margin-top: 20px;
+  padding: 38px 0px;
   text-align: justify;
   background: #409E98;
 }
@@ -60,6 +62,14 @@ footer > p {
   width: 500px;
   margin: 20px auto;
   text-align: justify;
+}
+
+.second {
+  margin-bottom: 76px;
+}
+
+.second h3 {
+  margin-top: 3em;
 }
 
 body {
@@ -121,7 +131,6 @@ body {
 nav > ul> li {
   float: left;
 }
-
 
 .center {
   display: block;

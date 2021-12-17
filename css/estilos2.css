@@ -55,10 +55,6 @@ body.dark h2,h3,h4,h5,h6 {
   color: #C8C8C8;
 }
 
-body h3 {
-  color: #000000;
-}
-
 body.dark nav {
   background: #222222;
   -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
@@ -91,6 +87,7 @@ body.dark footer {
 
 body.dark div.ir-arriba {
   background: #353535;
+  z-index: 10;
 }
 
 body.dark .icono-menu {
