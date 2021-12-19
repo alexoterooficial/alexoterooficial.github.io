@@ -132,6 +132,22 @@ nav .enlaces a {
           box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
+i.sun, i.moon {
+  height: 27px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sun > svg {
+  height: 18px;
+}
+
+.moon > svg {
+  height: 18px;
+}
+
 .switch.active {
   background: orange;
   color: #000;

@@ -55,6 +55,10 @@ body.dark h2,h3,h4,h5,h6 {
   color: #C8C8C8;
 }
 
+body.dark > .second h3 {
+  color: #C8C8C8;
+}
+
 body.dark nav {
   background: #222222;
   -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
@@ -153,6 +157,46 @@ nav .enlaces a {
   transition: .3s ease all;
   -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+i.sun {
+  height: 27px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i.moon {
+  height: 27px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icono-menu-sun, .icono-menu-moon {
+  height: 48px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sun > svg {
+  height: 18px;
+}
+
+.moon > svg {
+  height: 18px;
+}
+
+.icono-menu-sun > svg {
+  height: 18px;
+}
+
+.icono-menu-moon > svg {
+  height: 18px;
 }
 
 .switch.active {

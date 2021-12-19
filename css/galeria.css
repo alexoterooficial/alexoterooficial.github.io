@@ -64,7 +64,6 @@ footer > p {
 .menu > li > a{
   display: block;
   padding: 15px 20px;
-  color: #353535;
   font-family: 'Algerian';
   text-decoration: none; 
 }
@@ -102,8 +101,6 @@ nav > ul> li {
 }
 
 nav ul li a {
-  text-decoration-color: none;
-  color: #fff;
   display: block;
   padding: 10px 20px;
 }
@@ -188,6 +185,8 @@ ul {
 
 .galeria img {
   height: 300px;
+  width: 300px;
+  object-fit: cover;
 }
 
 /*Estilos del modal*/
@@ -229,7 +228,10 @@ div.image {
 div.image img {
   margin: 0;
   height: 550px;
+  width: 625px;
   border: 7px solid #fff;
+  object-fit: contain;
+  background: #000;
 }
 
 .cerrar {

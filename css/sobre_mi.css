@@ -14,17 +14,19 @@
   outline-width: unset;
 }
 
+body {
+  background: #44EFC8;
+  color: #000000;
+}
+
 h1 > a:hover{
   color: #44EFC8;
   transition: all .5s;
 }
 
-h2 {
-  position: center;
-}
-
 h2,h3,h4,h5,h6 {
-  font-family: 'Algerian'
+  font-family: 'Algerian';
+  color: #000;
 }
 
 h2, h3 {
@@ -70,11 +72,7 @@ footer > p {
 
 .second h3 {
   margin-top: 3em;
-}
-
-body {
-  background:#44EFC8;
-  color:#000000;
+  color: #000;
 }
 
 .navegacion{
@@ -95,8 +93,6 @@ body {
 
 .menu > li > a{
   display: block;
-  padding: 15px 20px
-  color: #353535;
   font-family: 'Algerian';
   text-decoration: none; 
 }
