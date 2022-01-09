@@ -400,8 +400,6 @@ button.btn:focus {
   object-fit: cover;
 }
 
-/*Estilos del modal*/
-
 .modal {
   display: none;
 }
@@ -471,8 +469,6 @@ div.image img {
 	border-radius: 50%;
 	line-height: 25px;
 }
-
-/*Social media buttons*/
 
 div.social_media_buttons {
   margin: 0;
@@ -617,10 +613,6 @@ i.tsuki {
   align-items: center;
 }
 
-/*Social media buttons*/
-
-/* Modo oscuro */
-
 body.dark {
   background: #111111;
 }
@@ -734,5 +726,3 @@ i.sun, i.moon {
   background: none;
   color: #fff;
 }
-
-/* Modo oscuro */
