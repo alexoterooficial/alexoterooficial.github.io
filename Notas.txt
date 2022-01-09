@@ -1,5 +1,3 @@
 Problemas de la página:
 
 1. Falta agregar texto a la página de Tsuki
-
-2. Falta arreglar el tamaño de las fotos modal de la galería 

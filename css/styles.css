@@ -420,33 +420,32 @@ div.imagen > div {
 
 div.image img {
 	margin: 0;
-	height: 70%;
-	width: 70%;
+	height: 80vh;
+	width: 80vw;
 	border: 7px solid #fff;
 	object-fit: contain;
 	background: #000;
-	/**/
-	/*margin: 0;
-  height: 550px;
-  width: 625px;
-  border: 7px solid #fff;
-  object-fit: contain;
-  background: #000;*/
+}
+
+.image a {
+	font-size: 6vh;
 }
 
 .cerrar {
-  display: block;
-  background: #fff;
-  width: 33px;
-  height: 33px;
-  margin: 15px auto;
-  text-align: center;
-  text-decoration: none;
-  font-size: 25px;
-  color: #000;
-  padding: 5px;
-  border-radius: 50%;
-  line-height: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+	width: 6vh;
+	height: 6vh;
+	margin: 15px auto;
+	text-align: center;
+	text-decoration: none;
+	font-size: 25px;
+	color: #000;
+	padding: 5px;
+	border-radius: 50%;
+	line-height: 25px;
 }
 
 /*Social media buttons*/
