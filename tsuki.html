@@ -3,26 +3,108 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Tsuki | Alex Otero</title>
+	<title>Tsuki | Alex Otero</title> 
 	<link rel="shortcut icon" type="image/x-icon" href="assets\Logo.png">
-	<meta name="keywords" content="Alex, Otero, Alex Otero, actor, modelo, programar, programación, página web, interesante, google, Google, html, css, js, query, YouTube, Instagram, Inicio, galería, sobre mi, main, estilos, tsuki, kitty, cat, kittens, michis, gatos, gatitos, tiernos">
-	<link rel="stylesheet" type="text/css" href="css/tsuki.css">
-	<link rel="stylesheet" type="text/css" href="css/fonts.css">
-	<link rel="stylesheet" type="text/css" href="css/algerian.css">
-	<!-- Social Media Buttons -->
-	<link rel="stylesheet" type="text/css" href="css/social_media_buttons.css">
-	<!-- Social Media Buttons-->
+	<meta name="keywords" content="Alex, Otero, Alex Otero, actor, modelo, programar, programación, página web, interesante, google, Google, html, css, js, query, YouTube, Instagram, Inicio, galería, sobre mi, main, estilos">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/header_script.js"></script>
 	<!--Modo Oscuro-->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet"> 
-	<link rel="stylesheet" href="css/estilos2_1.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
 	<!--Modo Oscuro-->
 	<script src="js/code.js"></script>
-	<script src="js/up_button.js"></script>	
+	<script src="js/up_button.js"></script>
 </head>
 
 <body>
+	<div class="ring_loader">
+		<div class="ring"></div>
+		<div class="loading_text">
+			<img src="assets\Alex_Otero-Logo.png" class="loading_logo" alt="">
+			<p>Cargando...</p>
+		</div>
+	</div>
+
 	<header>
+		<img src="assets\Alex_Otero-Logo.png" width="100" alt="Logo" class="header_logo">
+
+		<ul class="menu">
+
+			<li><a class="nav_li" href="index.html">Inicio</a></li>
+
+			<li><a class="nav_li" href="sobre_mi.html">Sobre mí</a></li>
+
+			<li><a class="nav_li" href="tsuki.html">Tsuki</a></li>
+
+			<li><a class="nav_li" href="galeria.html">Galería</a></li>
+
+			<button class="switch" id="switch">
+				<span>
+
+					<i class="sun">
+						<svg viewBox="0 0 512 512">
+							<path fill="currentColor" d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z"></path>
+						</svg>
+					</i>
+
+				</span>
+				<span>
+
+					<i class="moon">
+						<svg viewBox="0 0 512 512">
+							<path fill="currentColor" d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z" class=""></path>
+						</svg>
+					</i>
+
+				</span>
+			</button>
+		</ul>
+	</header>
+
+	<div class="space"></div>
+
+	<div class="ir-arriba" title="Subir">
+		<svg class="arrow_up" viewBox="0 0 512 512">
+			<path fill="currentColor" d="M264.5 163.5l122.8 122.8c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 234.2l-91.7 91.7c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l122.8-122.8c4.7-4.7 12.3-4.7 17 0zM504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-48 0c0-110.5-89.5-200-200-200S56 145.5 56 256s89.5 200 200 200 200-89.5 200-200z"></path>
+		</svg>
+	</div>
+
+	<div class="text">
+		<h1>Tsuki</h1>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione minus tenetur, magnam nisi assumenda vel excepturi ipsa, maxime voluptas unde! Non ipsa, repellendus vel placeat dolore eveniet incidunt minima quidem?
+		Voluptatem modi reiciendis illo dolorem blanditiis mollitia necessitatibus ipsum laudantium, iusto ullam perferendis deleniti dolores saepe optio, maxime facere, temporibus eum. Eum, voluptate ipsa itaque ea eaque dignissimos quidem quos!
+		Dicta exercitationem repudiandae consectetur quam dolor possimus hic explicabo itaque! Expedita sit repellat itaque debitis quos earum autem maxime asperiores nesciunt accusantium iure neque dignissimos voluptatum reprehenderit veritatis, officia, cumque.
+		Placeat quaerat unde quo eos expedita facere harum, repudiandae, aliquam dolores et itaque culpa vel? Expedita ipsa adipisci laboriosam modi facilis natus enim doloribus, quam. At ratione nesciunt est nam.
+		Corporis, officiis nemo inventore quia sit reprehenderit aspernatur reiciendis enim cum. Est dolores fugit voluptatum quaerat corrupti dignissimos doloribus nesciunt quibusdam molestiae neque. Praesentium minima cum eius dolores dolore perferendis.
+		Suscipit at expedita deserunt delectus ullam, hic molestiae explicabo natus quod nisi perferendis nihil quam accusamus fugit neque cumque. Laborum, assumenda officiis numquam perferendis suscipit illum optio consequatur laudantium, aperiam.
+		Inventore iusto alias obcaecati ex voluptatum ut eum! In, deleniti alias repudiandae tempore dolores, eos rem magni dolorum animi eligendi, autem vitae, ducimus fuga voluptatem! Assumenda necessitatibus quidem tenetur consectetur!
+		Esse et tempore consequuntur impedit ut, ullam cum quae adipisci, earum, provident blanditiis. Iste amet deleniti eaque, commodi praesentium quae ducimus facilis rerum vel, iure quo voluptas laboriosam! Fuga, hic.
+		Molestias blanditiis earum voluptas, delectus qui doloremque laudantium, temporibus beatae quasi quam, accusamus! Eveniet doloremque deserunt quasi, dignissimos veniam, perferendis nobis, sed fuga praesentium consequatur expedita odio a nemo tempore?
+		Tempora quia et animi nihil, voluptas rerum amet, id debitis nulla dolores voluptatem maiores aliquam, mollitia! Hic dicta eligendi culpa voluptates quia similique. A ea, odio necessitatibus, expedita similique tenetur.
+		Inventore, ad! Quae necessitatibus modi dolorem nihil repellendus architecto, quam facere deleniti accusantium quis esse autem fugiat laudantium debitis odio, corporis quia nulla provident molestias quibusdam, ex inventore nesciunt? Sunt.
+		Minima possimus, sit maiores repellendus illo facilis dignissimos autem fugit quo iste corrupti, error obcaecati repellat impedit accusantium sint, inventore voluptate, placeat? Nisi doloribus a officia cum tenetur molestias in.
+		Dolorem quis maiores, ipsum voluptatem, repellendus asperiores laborum eos deleniti. Provident ad, aut voluptatem quasi. Velit eius quasi facilis ratione praesentium exercitationem, at architecto iusto maxime, a, asperiores, unde placeat.
+		Enim temporibus cum odit incidunt nemo eius iusto fugiat placeat optio quod minus neque rem, vitae quaerat. Totam ipsam porro quibusdam veniam in maiores optio voluptate consectetur veritatis, enim nisi.
+		Ab, tempore voluptates, facilis laboriosam nulla, praesentium aperiam voluptate libero rem quas facere. Numquam, deleniti obcaecati expedita dolorem, asperiores reiciendis harum neque eius quibusdam velit. Reprehenderit atque ipsum autem, perspiciatis?
+		Earum atque libero, placeat laudantium minima sunt ratione tempore, dolor aliquam totam perspiciatis labore nulla nesciunt officia quae possimus mollitia, natus a accusantium repudiandae et tenetur similique. Explicabo, quam impedit?
+		Corrupti ex qui earum cumque, ea recusandae repellat inventore quae quibusdam! Atque adipisci aperiam, impedit cupiditate deleniti quidem voluptate repellendus deserunt ad, maxime tempora, quaerat ab illum ducimus in nostrum!
+		Laborum rerum officia sit quos nulla, fugiat animi necessitatibus maxime ad possimus facilis quia consequatur esse dolor nesciunt consectetur! Dolor debitis, veritatis enim perferendis cumque, blanditiis. Unde at iusto aliquid!
+		Molestiae iure maxime in consequatur non. Ex quasi iusto quaerat dicta ratione nostrum, possimus, sequi eaque est cumque explicabo, eveniet, at accusantium ipsa nobis praesentium similique fuga ut quo id?
+		Modi libero consequatur aliquid nobis voluptas maxime ratione atque cum, possimus distinctio id unde iure ipsa optio et assumenda asperiores quidem reprehenderit deserunt, quo exercitationem. Architecto mollitia sed dolorem natus?
+		Architecto, animi maxime, fugiat voluptatibus nulla ratione. Voluptate consequatur nam cum, nesciunt quod, ab blanditiis? Autem recusandae porro unde quisquam, quidem doloribus voluptas officiis laudantium itaque ipsam exercitationem, amet aperiam!
+		Quod, dolorum, dicta. Cumque placeat, molestias excepturi neque facere ipsa eos accusamus odit, atque delectus quam voluptas qui quis hic quasi ab inventore recusandae deserunt ut incidunt. Nemo, corrupti vero.
+		Ab eaque qui nesciunt et fugit modi, magni officiis, iusto, nobis totam, quae amet quibusdam. Autem, omnis animi excepturi. Fugit sequi vitae provident, illo reiciendis quisquam maxime, ex beatae temporibus?
+		Neque amet illum vel, vitae animi sequi obcaecati sed molestias quas, quisquam qui quidem, aliquam. Dolores nobis molestiae soluta a. Tempora, deleniti libero dignissimos totam architecto incidunt harum quam sequi?
+		Quis accusantium placeat, dolores sequi, tempora repellat alias, odio, id consequatur fugit iure voluptates! Quia, esse, enim. Perspiciatis, ab, ducimus. Eveniet ipsa vel mollitia, iure cum itaque sapiente quas dignissimos.
+		</p>
+	</div>
+
+	
+	<script src="js/loader.js"></script>
+
+	<footer>
+		<p>Alex Otero - <script src="js/date.js"></script> Copyright &copy;. Todos los derechos reservados</p>
 		<div class="social_media_buttons">
 			<div class="wrapper">
 
@@ -88,100 +170,6 @@
 
 			</div>
 		</div>
-
-			<div class="ir-arriba">
-				<svg class="arrow_up" viewBox="0 0 512 512">
-					<path fill="currentColor" d="M264.5 163.5l122.8 122.8c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 234.2l-91.7 91.7c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l122.8-122.8c4.7-4.7 12.3-4.7 17 0zM504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-48 0c0-110.5-89.5-200-200-200S56 145.5 56 256s89.5 200 200 200 200-89.5 200-200z"></path>
-				</svg>
-			</div>
-			<section class="contenido"></section>
-			<nav class="navegacion">
-				<ul class="menu">
-
-				<img src="assets\Alex_Otero-Logo.png" width="100" alt="Logo">
-
-				<h1><a href="index.html">Alex Otero</a></h1>
-
-				<li><a href="Inicio.html"><i class=""></i> Inicio</a></li>
-
-				<li><a href="sobre_mi.html"><i class=""></i> Sobre mí</a></li>
-
-				<li><a href="tsuki.html"><i class=""></i> >Tsuki<</a></li>
-
-				<li><a href="galeria.html"><i class=""></i> Galería</a></li>
-
-				<button class="switch" id="switch">
-					<span>
-
-						<i class="sun">
-							<svg viewBox="0 0 512 512">
-								<path fill="currentColor" d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z"></path>
-							</svg>
-						</i>
-
-					</span>
-					<span>
-
-						<i class="moon">
-							<svg viewBox="0 0 512 512">
-								<path fill="currentColor" d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z" class=""></path>
-							</svg>
-						</i>
-
-					</span>
-				</button>
-
-				</ul>
-			</nav>
-	</header>
-
-	<section class="wrapper">
-		<section class="main">
-			<article>
-				<h2><font size="5">Tsuki</font></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				<br><br>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				<br><br>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt olmlit anim id est laborum.
-				<br><br>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				<br><br>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-				<!-- <br> -->
-			</article>
-		</section>
-	</section>
-
-	
-	<footer>
-			<p>Alex Otero - <script src="js/date.js"></script> Copyright &copy;. Todos los derechos reservados </p>
 	</footer>
 	<!--Modo Oscuro-->
 	<script src="js/main.js"></script>
