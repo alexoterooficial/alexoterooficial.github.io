@@ -307,6 +307,30 @@ strong:hover {
   93.75% {margin-left: -2100px;}
 }
 
+.image_container {
+	object-fit: contain;
+	width: 80%;
+  margin: 0% 10% 3% 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tsuki_thekitty {
+	height: 300px;
+	width: 300px;
+}
+
+.tsuki_container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
 button.btn {
   margin-top: 19px;
   max-width: 290.8px;
