@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Algerian';
-  src: url('C:/Users/Alex Otero/AppData/Local/Microsoft/Windows/Fonts/ALGER.tff') format("truetrype");
+  src: url('assets/Algerian.tff') format("truetrype");
   font-weight: normal;
   font-style: normal;
 }
@@ -28,7 +28,7 @@ h1 > a:hover{
 }
 
 h2,h3,h4,h5,h6 {
-  font-family: 'Algerian'
+  font-family: 'Algerian';
 }
 
 body {

@@ -3,27 +3,986 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Galeria | Alex Otero</title>
 	<link rel="shortcut icon" type="image/x-icon" href="assets\Logo.png">
-	<link rel="stylesheet" type="text/css" href="css/galeria.css">
-	<link rel="stylesheet" type="text/css" href="css/fonts.css">
-	<link rel="stylesheet" type="text/css" href="css/algerian.css">
-	<!-- Social Media Buttons -->
-	<link rel="stylesheet" type="text/css" href="css/social_media_buttons_galeria.css">
-	<!-- Social Media Buttons-->
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/header_script.js"></script>
 	<!--Modo Oscuro-->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet"> 
-	<link rel="stylesheet" href="css/estilos2.css">
 	<!--Modo Oscuro-->
 	<script src="js/code.js"></script>
 	<script src="js/up_button.js"></script>
 </head>
 
 <body>
+	<div class="ring_loader">
+		<div class="ring"></div>
+		<div class="loading_text">
+			<img src="assets\Alex_Otero-Logo.png" class="loading_logo" alt="">
+			<p>Cargando...</p>
+		</div>
+	</div>
 
 	<header>
+		<img src="assets\Alex_Otero-Logo.png" width="100" alt="Logo" class="header_logo">
 
+		<ul class="menu">
+
+			<li><a class="nav_li" href="index.html">Inicio</a></li>
+
+			<li><a class="nav_li" href="sobre_mi.html">Sobre mí</a></li>
+
+			<li><a class="nav_li" href="tsuki.html">Tsuki</a></li>
+
+			<li><a class="nav_li" href="galeria.html">Galería</a></li>
+
+			<button class="switch" id="switch">
+				<span>
+
+					<i class="sun">
+						<svg viewBox="0 0 512 512">
+							<path fill="currentColor" d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z"></path>
+						</svg>
+					</i>
+
+				</span>
+				<span>
+
+					<i class="moon">
+						<svg viewBox="0 0 512 512">
+							<path fill="currentColor" d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z" class=""></path>
+						</svg>
+					</i>
+
+				</span>
+			</button>
+		</ul>
+	</header>
+
+	<div class="space"></div>
+
+	<div class="ir-arriba">
+		<svg class="arrow_up" viewBox="0 0 512 512">
+			<path fill="currentColor" d="M264.5 163.5l122.8 122.8c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 234.2l-91.7 91.7c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l122.8-122.8c4.7-4.7 12.3-4.7 17 0zM504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-48 0c0-110.5-89.5-200-200-200S56 145.5 56 256s89.5 200 200 200 200-89.5 200-200z"></path>
+		</svg>
+	</div>
+
+	<div class="text"><h1>Galería</h1></div>
+	<ul class="galeria">
+
+		<!--Galería-->
+			
+		<li><div id="id_1"><a href="#img1"><img src="assets\1.jpg"></a></div></li>
+
+		<li><div id="id_2"><a href="#img2"><img src="assets\2.jpg"></a></div></li>
+
+		<li><div id="id_3"><a href="#img3"><img src="assets\IMG_0004.jpg"></a></div></li>
+
+		<li><div id="id_4"><a href="#img4"><img src="assets\tsuki en casita.png"></a></div></li>
+
+		<li><div id="id_5"><a href="#img5"><img src="assets\tsuki_en_silla.png"></a></div></li>
+		
+		<li><div id="id_6"><a href="#img6"><img src="assets\follow_tsuki.png"></a></div></li>
+
+		<li><div id="id_7"><a href="#img7"><img src="assets\582632539.jpg"></a></div></li>
+
+		<li><div id="id_8"><a href="#img8"><img src="assets\20151125.jpg"></a></div></li>
+
+		<li><div id="id_9"><a href="#img9"><img src="assets\20151007_131549.jpg"></a></div></li>
+
+		<li><div id="id_10"><a href="#img10"><img src="assets\20150917_111840.jpg"></a></div></li>
+
+		<li><div id="id_11"><a href="#img11"><img src="assets\20150917_104019.jpg"></a></div></li>
+
+		<li><div id="id_12"><a href="#img12"><img src="assets\20150908_181704.jpg"></a></div></li>
+
+		<li><div id="id_13"><a href="#img13"><img src="assets\20150608_185054.jpg"></a></div></li>
+
+		<li><div id="id_14"><a href="#img14"><img src="assets\20150525_193052.jpg"></a></div></li>
+
+		<li><div id="id_15"><a href="#img15"><img src="assets\20150525_192845b.jpg"></a></div></li>
+
+		<li><div id="id_16"><a href="#img16"><img src="assets\20150413_190207.jpg"></a></div></li>
+
+		<li><div id="id_17"><a href="#img17"><img src="assets\20150310_101514.jpg"></a></div></li>
+
+		<li><div id="id_18"><a href="#img18"><img src="assets\75811394824_28549.jpg"></a></div></li>
+
+		<li><div id="id_19"><a href="#img19"><img src="assets\303.jpg"></a></div></li>
+
+		<li><div id="id_20"><a href="#img20"><img src="assets\tsuki_nariz_al_aire.png"></a></div></li>
+
+		<li><div id="id_21"><a href="#img21"><img src="assets\8529826.jpg"></a></div></li>
+
+		<li><div id="id_22"><a href="#img22"><img src="assets\2328684.jpg"></a></div></li>
+
+		<li><div id="id_23"><a href="#img23"><img src="assets\8547439.jpg"></a></div></li>
+
+		<li><div id="id_24"><a href="#img24"><img src="assets\728603.jpg"></a></div></li>
+
+		<li><div id="id_25"><a href="#img25"><img src="assets\21348684.jpg"></a></div></li>
+
+		<li><div id="id_26"><a href="#img26"><img src="assets\753159.jpg"></a></div></li>
+
+		<li><div id="id_27"><a href="#img27"><img src="assets\185276.jpg"></a></div></li>
+
+		<li><div id="id_28"><a href="#img28"><img src="assets\59229.jpg"></a></div></li>
+
+		<li><div id="id_29"><a href="#img29"><img src="assets\29849.jpg"></a></div></li>
+
+		<li><div id="id_30"><a href="#img30"><img src="assets\579138.jpg"></a></div></li>
+
+		<li><div id="id_31"><a href="#img31"><img src="assets\24183866.jpg"></a></div></li>
+
+		<li><div id="id_32"><a href="#img32"><img src="assets\8216832465.jfif"></a></div></li>
+
+		<li><div id="id_33"><a href="#img33"><img src="assets\IMG_4112.jpg"></a></div></li>
+
+		<li><div id="id_34"><a href="#img34"><img src="assets\IMG_4108.jpg"></a></div></li>
+
+		<li><div id="id_35"><a href="#img35"><img src="assets\IMG_4116.jpg"></a></div></li>
+
+		<li><div id="id_36"><a href="#img36"><img src="assets\IMG_4110.jpg"></a></div></li>
+
+		<li><div id="id_37"><a href="#img37"><img src="assets\IMG_4120.jpg"></a></div></li>
+
+		<li><div id="id_38"><a href="#img38"><img src="assets\78693125786.jpg"></a></div></li>
+
+		<li><div id="id_39"><a href="#img39"><img src="assets\46463315.png"></a></div></li>
+
+		<li><div id="id_40"><a href="#img40"><img src="assets\95315664.png"></a></div></li>
+
+		<li><div id="id_41"><a href="#img41"><img src="assets\49653298.jpg"></a></div></li>
+
+		<li><div id="id_42"><a href="#img42"><img src="assets\753229319.jpg"></a></div></li>
+
+		<li><div id="id_43"><a href="#img43"><img src="assets\613138486.png"></a></div></li>
+
+		<li><div id="id_44"><a href="#img44"><img src="assets\8264843.png"></a></div></li>
+
+		<li><div id="id_45"><a href="#img45"><img src="assets\IMG_4111.jpg"></a></div></li>
+
+		<li><div id="id_46"><a href="#img46"><img src="assets\2168.png"></a></div></li>
+
+		<li><div id="id_47"><a href="#img47"><img src="assets\75832223.png"></a></div></li>
+
+		<li><div id="id_48"><a href="#img48"><img src="assets\35185996.png"></a></div></li>
+
+		<li><div id="id_49"><a href="#img49"><img src="assets\13549662.png"></a></div></li>
+
+		<li><div id="id_50"><a href="#img50"><img src="assets\1354889.png"></a></div></li>
+
+		<li><div id="id_51"><a href="#img51"><img src="assets\204.jpg"></a></div></li>
+
+		<li><div id="id_52"><a href="#img52"><img src="assets\442.jpg"></a></div></li>
+
+		<li><div id="id_53"><a href="#img53"><img src="assets\158.jpg"></a></div></li>
+
+		<li><div id="id_54"><a href="#img54"><img src="assets\852.jpg"></a></div></li>
+
+		<li><div id="id_55"><a href="#img55"><img src="assets\624.jpg"></a></div></li>
+
+		<li><div id="id_56"><a href="#img56"><img src="assets\846.jpg"></a></div></li>
+
+		<li><div id="id_57"><a href="#img57"><img src="assets\957.jpg"></a></div></li>
+
+		<li><div id="id_58"><a href="#img58"><img src="assets\325.jpg"></a></div></li>
+
+		<li><div id="id_59"><a href="#img59"><img src="assets\156.jpg"></a></div></li>
+
+		<li><div id="id_60"><a href="#img60"><img src="assets\185.jpg"></a></div></li>
+
+		<li><div id="id_61"><a href="#img61"><img src="assets\415.jpeg"></a></div></li>
+
+		<li><div id="id_62"><a href="#img62"><img src="assets\424.jpeg"></a></div></li>
+
+		<li><div id="id_63"><a href="#img63"><img src="assets\428.jpeg"></a></div></li>
+
+		<li><div id="id_64"><a href="#img64"><img src="assets\436.jpeg"></a></div></li>
+
+		<li><div id="id_65"><a href="#img65"><img src="assets\443.jpeg"></a></div></li>
+
+		<li><div id="id_66"><a href="#img66"><img src="assets\445.jpeg"></a></div></li>
+
+		<li><div id="id_67"><a href="#img67"><img src="assets\448.jpeg"></a></div></li>
+
+		<li><div id="id_68"><a href="#img68"><img src="assets\482.jpeg"></a></div></li>
+
+		<li><div id="id_69"><a href="#img69"><img src="assets\202.jpg"></a></div></li>
+		</ul>
+
+		<!--Estilos modal-->
+
+		<div class="modal" id="img1">
+		<div class="image">
+			<div class="imagen">
+				<a href="#img69" title="ver anterior">&#60;</a>
+				<div><img src="assets\1.jpg"></div>
+				<a href="#img2" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_1">X</a>
+		</div>
+		</div>
+
+		
+		<div class="modal" id="img2">
+		<div class="image">
+			<div class="imagen">
+				<a href="#img1" title="ver anterior">&#60;</a>
+				<div><img src="assets\2.jpg"></div>
+				<a href="#img3" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_2">X</a>
+		</div>
+		</div>
+
+		
+		<div class="modal" id="img3">
+		<div class="image">
+			<div class="imagen">
+				<a href="#img2" title="ver anterior">&#60;</a>
+				<div><img src="assets\IMG_0004.jpg"></div>
+				<a href="#img4" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_3">X</a>
+		</div>
+		</div>
+
+		
+		<div class="modal" id="img4">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img3" title="ver anterior">&#60;</a>
+				<div><img src="assets\tsuki en casita.png"></div>
+				<a href="#img5" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_4">X</a>
+		</div>
+		</div>
+
+		
+		<div class="modal" id="img5">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img4" title="ver anterior">&#60;</a>
+				<div><img src="assets\tsuki_en_silla.png"></div>
+				<a href="#img6" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_5">X</a>
+		</div>
+		</div>
+
+		
+		<div class="modal" id="img6">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img5" title="ver anterior">&#60;</a>
+				<div><img src="assets\follow_tsuki.png"></div>
+				<a href="#img7" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_6">X</a>
+		</div>
+		</div>
+
+		<div class="modal" id="img7">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img6" title="ver anterior">&#60;</a>
+				<div><img src="assets\582632539.jpg"></div>
+				<a href="#img8" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_7">X</a>
+		</div>
+	</div>
+
+		<div class="modal" id="img8">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img7" title="ver anterior">&#60;</a>
+				<div><img src="assets\20151125.jpg"></div>
+				<a href="#img9" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_8">X</a>
+		</div>
+		</div>
+
+		<div class="modal" id="img9">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img8" title="ver anterior">&#60;</a>
+				<div><img src="assets\20151007_131549.jpg"></div>
+				<a href="#img10" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_9">X</a>
+		</div>
+	</div>
+
+		<div class="modal" id="img10">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img9" title="ver anterior">&#60;</a>
+				<div><img src="assets\20150917_111840.jpg"></div>
+				<a href="#img11" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_10">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img11">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img10" title="ver anterior">&#60;</a>
+				<div><img src="assets\20150917_104019.jpg"></div>
+				<a href="#img12" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_11">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img12">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img11" title="ver anterior">&#60;</a>
+				<div><img src="assets\20150908_181704.jpg"></div>
+				<a href="#img13" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_12">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img13">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img12" title="ver anterior">&#60;</a>
+				<div><img src="assets\20150608_185054.jpg"></div>
+				<a href="#img14" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_13">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img14">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img13" title="ver anterior">&#60;</a>
+				<div><img src="assets\20150525_193052.jpg"></div>
+				<a href="#img15" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_14">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img15">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img14" title="ver anterior">&#60;</a>
+				<div><img src="assets\20150525_192845b.jpg"></div>
+				<a href="#img16" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_15">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img16">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img15" title="ver anterior">&#60;</a>
+				<div><img src="assets\20150413_190207.jpg"></div>
+				<a href="#img17" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_16">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img17">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img16" title="ver anterior">&#60;</a>
+				<div><img src="assets\20150310_101514.jpg"></div>
+				<a href="#img18" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_17">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img18">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img17" title="ver anterior">&#60;</a>
+				<div><img src="assets\75811394824_28549.jpg"></div>
+				<a href="#img19" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_18">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img19">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img18" title="ver anterior">&#60;</a>
+				<div class="modal_logo"><img src="assets\303.jpg"></div>
+				<a href="#img20" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_19">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img20">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img19" title="ver anterior">&#60;</a>
+				<div><img src="assets\tsuki_nariz_al_aire.png"></div>
+				<a href="#img21" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_20">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img21">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img20" title="ver anterior">&#60;</a>
+				<div><img src="assets\8529826.jpg"></div>
+				<a href="#img22" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_21">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img22">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img21" title="ver anterior">&#60;</a>
+				<div><img src="assets\2328684.jpg"></div>
+				<a href="#img23" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_22">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img23">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img22" title="ver anterior">&#60;</a>
+				<div><img src="assets\8547439.jpg"></div>
+				<a href="#img24" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_23">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img24">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img23" title="ver anterior">&#60;</a>
+				<div><img src="assets\728603.jpg"></div>
+				<a href="#img25" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_24">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img25">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img24" title="ver anterior">&#60;</a>
+				<div><img src="assets\21348684.jpg"></div>
+				<a href="#img26" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_25">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img26">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img25" title="ver anterior">&#60;</a>
+				<div><img src="assets\753159.jpg"></div>
+				<a href="#img27" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_26">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img27">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img26" title="ver anterior">&#60;</a>
+				<div><img src="assets\185276.jpg"></div>
+				<a href="#img28" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_27">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img28">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img27" title="ver anterior">&#60;</a>
+				<div><img src="assets\59229.jpg"></div>
+				<a href="#img29" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_28">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img29">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img28" title="ver anterior">&#60;</a>
+				<div><img src="assets\29849.jpg"></div>
+				<a href="#img30" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_29">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img30">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img29" title="ver anterior">&#60;</a>
+				<div><img src="assets\579138.jpg"></div>
+				<a href="#img31" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_30">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img31">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img30" title="ver anterior">&#60;</a>
+				<div><img src="assets\24183866.jpg"></div>
+				<a href="#img32" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_31">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img32">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img31" title="ver anterior">&#60;</a>
+				<div><img src="assets\8216832465.jfif"></div>
+				<a href="#img33" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_32">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img33">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img32" title="ver anterior">&#60;</a>
+				<div><img src="assets\IMG_4112.jpg"></div>
+				<a href="#img34" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_33">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img34">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img33" title="ver anterior">&#60;</a>
+				<div><img src="assets\IMG_4108.jpg"></div>
+				<a href="#img35" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_34">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img35">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img34" title="ver anterior">&#60;</a>
+				<div><img src="assets\IMG_4116.jpg"></div>
+				<a href="#img36" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_35">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img36">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img35" title="ver anterior">&#60;</a>
+				<div><img src="assets\IMG_4110.jpg"></div>
+				<a href="#img37" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_36">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img37">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img36" title="ver anterior">&#60;</a>
+				<div><img src="assets\IMG_4120.jpg"></div>
+				<a href="#img38" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_37">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img38">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img37" title="ver anterior">&#60;</a>
+				<div><img src="assets\78693125786.jpg"></div>
+				<a href="#img39" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_38">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img39">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img38" title="ver anterior">&#60;</a>
+				<div><img src="assets\46463315.png"></div>
+				<a href="#img40" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_39">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img40">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img39" title="ver anterior">&#60;</a>
+				<div><img src="assets\95315664.png"></div>
+				<a href="#img41" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_40">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img41">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img40" title="ver anterior">&#60;</a>
+				<div><img src="assets\49653298.jpg"></div>
+				<a href="#img42" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_41">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img42">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img41" title="ver anterior">&#60;</a>
+				<div><img src="assets\753229319.jpg"></div>
+				<a href="#img43" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_42">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img43">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img42" title="ver anterior">&#60;</a>
+				<div><img src="assets\613138486.png"></div>
+				<a href="#img44" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_43">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img44">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img43" title="ver anterior">&#60;</a>
+				<div><img src="assets\8264843.png"></div>
+				<a href="#img45" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_44">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img45">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img44" title="ver anterior">&#60;</a>
+				<div><img src="assets\IMG_4111.jpg"></div>
+				<a href="#img46" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_45">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img46">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img45" title="ver anterior">&#60;</a>
+				<div><img src="assets\2168.png"></div>
+				<a href="#img47" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_46">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img47">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img46" title="ver anterior">&#60;</a>
+				<div><img src="assets\75832223.png"></div>
+				<a href="#img48" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_47">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img48">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img47" title="ver anterior">&#60;</a>
+				<div><img src="assets\35185996.png"></div>
+				<a href="#img49" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_48">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img49">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img48" title="ver anterior">&#60;</a>
+				<div><img src="assets\13549662.png"></div>
+				<a href="#img50" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_49">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img50">
+			<div class="image">
+			<div class="imagen">
+				<a href="#img49" title="ver anterior">&#60;</a>
+				<div><img src="assets\1354889.png"></div>
+				<a href="#img51" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_50">X</a>
+		</div>
+	</div>
+
+	<div class="modal" id="img51">
+		<div class="image">
+			<div class="imagen">
+				<a href="#img50" title="ver anterior">&#60;</a>
+				<div><img src="assets\204.jpg"></div>
+				<a href="#img52" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_51">X</a>
+		</div>
+		</div>
+
+		<div class="modal" id="img52">
+		<div class="image">
+			<div class="imagen">
+				<a href="#img51" title="ver anterior">&#60;</a>
+				<div><img src="assets\442.jpg"></div>
+				<a href="#img53" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_52">X</a>
+		</div>
+		</div>
+
+		<div class="modal" id="img53">
+		<div class="image">
+			<div class="imagen">
+				<a href="#img52" title="ver anterior">&#60;</a>
+				<div><img src="assets\158.jpg"></div>
+				<a href="#img54" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_53">X</a>
+		</div>
+		</div>
+
+		<div class="modal" id="img54">
+		<div class="image">
+			<div class="imagen">
+				<a href="#img53" title="ver anterior">&#60;</a>
+				<div><img src="assets\852.jpg"></div>
+				<a href="#img55" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_54">X</a>
+		</div>
+		</div>
+
+		<div class="modal" id="img55">
+		<div class="image">
+			<div class="imagen">
+				<a href="#img54" title="ver anterior">&#60;</a>
+				<div><img src="assets\624.jpg"></div>
+				<a href="#img56" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_55">X</a>
+		</div>
+		</div>
+
+		<div class="modal" id="img56">
+		<div class="image">
+			<div class="imagen">
+				<a href="#img55" title="ver anterior">&#60;</a>
+				<div><img src="assets\846.jpg"></div>
+				<a href="#img57" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_56">X</a>
+		</div>
+		</div>
+
+		<div class="modal" id="img57">
+		<div class="image">
+			<div class="imagen">
+				<a href="#img56" title="ver anterior">&#60;</a>
+				<div><img src="assets\957.jpg"></div>
+				<a href="#img58" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_57">X</a>
+		</div>
+		</div>
+
+		<div class="modal" id="img58">
+		<div class="image">
+			<div class="imagen">
+				<a href="#img57" title="ver anterior">&#60;</a>
+				<div><img src="assets\325.jpg"></div>
+				<a href="#img59" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_58">X</a>
+		</div>
+		</div>
+
+		<div class="modal" id="img59">
+		<div class="image">
+			<div class="imagen">
+				<a href="#img58" title="ver anterior">&#60;</a>
+				<div><img src="assets\156.jpg"></div>
+				<a href="#img60" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_59">X</a>
+		</div>
+		</div>
+
+		<div class="modal" id="img60">
+		<div class="image">
+			<div class="imagen">
+				<a href="#img59" title="ver anterior">&#60;</a>
+				<div><img src="assets\185.jpg"></div>
+				<a href="#img61" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_60">X</a>
+		</div>
+		</div>
+
+		<div class="modal" id="img61">
+		<div class="image">
+			<div class="imagen">
+				<a href="#img60" title="ver anterior">&#60;</a>
+				<div><img src="assets\415.jpeg"></div>
+				<a href="#img62" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_61">X</a>
+		</div>
+		</div>
+
+		<div class="modal" id="img62">
+		<div class="image">
+			<div class="imagen">
+				<a href="#img61" title="ver anterior">&#60;</a>
+				<div><img src="assets\424.jpeg"></div>
+				<a href="#img63" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_62">X</a>
+		</div>
+		</div>
+
+		<div class="modal" id="img63">
+		<div class="image">
+			<div class="imagen">
+				<a href="#img62" title="ver anterior">&#60;</a>
+				<div><img src="assets\428.jpeg"></div>
+				<a href="#img64" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_63">X</a>
+		</div>
+		</div>
+
+		<div class="modal" id="img64">
+		<div class="image">
+			<div class="imagen">
+				<a href="#img63" title="ver anterior">&#60;</a>
+				<div><img src="assets\436.jpeg"></div>
+				<a href="#img65" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_64">X</a>
+		</div>
+		</div>
+
+		<div class="modal" id="img65">
+		<div class="image">
+			<div class="imagen">
+				<a href="#img64" title="ver anterior">&#60;</a>
+				<div><img src="assets\443.jpeg"></div>
+				<a href="#img66" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_65">X</a>
+		</div>
+		</div>
+
+		<div class="modal" id="img66">
+		<div class="image">
+			<div class="imagen">
+				<a href="#img65" title="ver anterior">&#60;</a>
+				<div><img src="assets\445.jpeg"></div>
+				<a href="#img67" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_66">X</a>
+		</div>
+		</div>
+
+		<div class="modal" id="img67">
+		<div class="image">
+			<div class="imagen">
+				<a href="#img66" title="ver anterior">&#60;</a>
+				<div><img src="assets\448.jpeg"></div>
+				<a href="#img68" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_67">X</a>
+		</div>
+		</div>
+
+		<div class="modal" id="img68">
+		<div class="image">
+			<div class="imagen">
+				<a href="#img67" title="ver anterior">&#60;</a>
+				<div><img src="assets\482.jpeg"></div>
+				<a href="#img69" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_68">X</a>
+		</div>
+		</div>
+
+		<div class="modal" id="img69">
+		<div class="image">
+			<div class="imagen">
+				<a href="#img68" title="ver anterior">&#60;</a>
+				<div><img src="assets\202.jpg"></div>
+				<a href="#img1" title="ver siguiente">></a>
+			</div>
+			<a class="cerrar" title="cerrar" href="#id_69">X</a>
+		</div>
+		</div>
+
+	<script src="js/loader.js"></script>
+
+	<footer>
+		<p>Alex Otero - <script src="js/date.js"></script> Copyright &copy;. Todos los derechos reservados</p>
 		<div class="social_media_buttons">
 			<div class="wrapper">
 
@@ -89,968 +1048,6 @@
 
 			</div>
 		</div>
-
-		<div class="ir-arriba">
-			<svg class="arrow_up" viewBox="0 0 512 512">
-				<path fill="currentColor" d="M264.5 163.5l122.8 122.8c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 234.2l-91.7 91.7c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l122.8-122.8c4.7-4.7 12.3-4.7 17 0zM504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-48 0c0-110.5-89.5-200-200-200S56 145.5 56 256s89.5 200 200 200 200-89.5 200-200z"></path>
-			</svg>
-		</div>
-		<section class="contenido"></section>
-		<nav class="navegacion">
-			<ul class="menu">
-
-				<img src="assets\Alex_Otero-Logo.png" width="100" alt="Logo">
-
-				<h1><a class="nav_li" href="index.html">Alex Otero</a></h1>
-
-				<li><a class="nav_li" href="Inicio.html"><i class=""></i> Inicio</a></li>
-
-				<li><a class="nav_li" href="sobre_mi.html"><i class=""></i> Sobre mí</a></li>
-
-				<li class="tsuki"><a class="nav_li" href="tsuki.html"><i class=""></i> Tsuki</a></li>
-
-				<li><a class="nav_li" href="galeria.html"><i class=""></i> >Galería<</a></li>
-
-				<button class="switch" id="switch">
-					<span>
-
-						<i class="sun">
-							<svg viewBox="0 0 512 512">
-								<path fill="currentColor" d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z"></path>
-							</svg>
-						</i>
-
-					</span>
-					<span>
-
-						<i class="moon">
-							<svg viewBox="0 0 512 512">
-								<path fill="currentColor" d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z" class=""></path>
-							</svg>
-						</i>
-
-					</span>
-				</button>
-
-		 	</ul>
-		</nav>
-	</header>
-
-	<article>
-		<br>
-		<h2><font size="5">Galería</font></h2>
-		<ul class="galeria">
-
-			<!--Galería-->
-				
-			<li><div id="id_1"><a href="#img1"><img src="assets\Tsuki.png"></a></div></li>
-
-			<li><div id="id_2"><a href="#img2"><img src="assets\IMG_2246.jpg"></a></div></li>
-
-			<li><div id="id_3"><a href="#img3"><img src="assets\IMG_0004.jpg"></a></div></li>
-
-			<li><div id="id_4"><a href="#img4"><img src="assets\tsuki en casita.png"></a></div></li>
-
-			<li><div id="id_5"><a href="#img5"><img src="assets\tsuki_en_silla.png"></a></div></li>
-			
-			<li><div id="id_6"><a href="#img6"><img src="assets\follow_tsuki.png"></a></div></li>
-
-			<li><div id="id_7"><a href="#img7"><img src="assets\582632539.jpg"></a></div></li>
-
-			<li><div id="id_8"><a href="#img8"><img src="assets\20151125.jpg"></a></div></li>
-
-			<li><div id="id_9"><a href="#img9"><img src="assets\20151007_131549.jpg"></a></div></li>
-
-			<li><div id="id_10"><a href="#img10"><img src="assets\20150917_111840.jpg"></a></div></li>
-
-			<li><div id="id_11"><a href="#img11"><img src="assets\20150917_104019.jpg"></a></div></li>
-
-			<li><div id="id_12"><a href="#img12"><img src="assets\20150908_181704.jpg"></a></div></li>
-
-			<li><div id="id_13"><a href="#img13"><img src="assets\20150608_185054.jpg"></a></div></li>
-
-			<li><div id="id_14"><a href="#img14"><img src="assets\20150525_193052.jpg"></a></div></li>
-
-			<li><div id="id_15"><a href="#img15"><img src="assets\20150525_192845b.jpg"></a></div></li>
-
-			<li><div id="id_16"><a href="#img16"><img src="assets\20150413_190207.jpg"></a></div></li>
-
-			<li><div id="id_17"><a href="#img17"><img src="assets\20150310_101514.jpg"></a></div></li>
-
-			<li><div id="id_18"><a href="#img18"><img src="assets\75811394824_28549.jpg"></a></div></li>
-
-			<li><div id="id_19"><a href="#img19"><img src="assets\303.jpg"></a></div></li>
-
-			<li><div id="id_20"><a href="#img20"><img src="assets\tsuki_nariz_al_aire.png"></a></div></li>
-
-			<li><div id="id_21"><a href="#img21"><img src="assets\8529826.jpg"></a></div></li>
-
-			<li><div id="id_22"><a href="#img22"><img src="assets\2328684.jpg"></a></div></li>
-
-			<li><div id="id_23"><a href="#img23"><img src="assets\8547439.jpg"></a></div></li>
-
-			<li><div id="id_24"><a href="#img24"><img src="assets\728603.jpg"></a></div></li>
-
-			<li><div id="id_25"><a href="#img25"><img src="assets\21348684.jpg"></a></div></li>
-
-			<li><div id="id_26"><a href="#img26"><img src="assets\753159.jpg"></a></div></li>
-
-			<li><div id="id_27"><a href="#img27"><img src="assets\185276.jpg"></a></div></li>
-
-			<li><div id="id_28"><a href="#img28"><img src="assets\59229.jpg"></a></div></li>
-
-			<li><div id="id_29"><a href="#img29"><img src="assets\29849.jpg"></a></div></li>
-
-			<li><div id="id_30"><a href="#img30"><img src="assets\579138.jpg"></a></div></li>
-
-			<li><div id="id_31"><a href="#img31"><img src="assets\24183866.jpg"></a></div></li>
-
-			<li><div id="id_32"><a href="#img32"><img src="assets\8216832465.jfif"></a></div></li>
-
-			<li><div id="id_33"><a href="#img33"><img src="assets\IMG_4112.jpg"></a></div></li>
-
-			<li><div id="id_34"><a href="#img34"><img src="assets\IMG_4108.jpg"></a></div></li>
-
-			<li><div id="id_35"><a href="#img35"><img src="assets\IMG_4116.jpg"></a></div></li>
-
-			<li><div id="id_36"><a href="#img36"><img src="assets\IMG_4110.jpg"></a></div></li>
-
-			<li><div id="id_37"><a href="#img37"><img src="assets\IMG_4120.jpg"></a></div></li>
-
-			<li><div id="id_38"><a href="#img38"><img src="assets\78693125786.jpg"></a></div></li>
-
-			<li><div id="id_39"><a href="#img39"><img src="assets\46463315.png"></a></div></li>
-
-			<li><div id="id_40"><a href="#img40"><img src="assets\95315664.png"></a></div></li>
-
-			<li><div id="id_41"><a href="#img41"><img src="assets\49653298.jpg"></a></div></li>
-
-			<li><div id="id_42"><a href="#img42"><img src="assets\753229319.jpg"></a></div></li>
-
-			<li><div id="id_43"><a href="#img43"><img src="assets\613138486.png"></a></div></li>
-
-			<li><div id="id_44"><a href="#img44"><img src="assets\8264843.png"></a></div></li>
-
-			<li><div id="id_45"><a href="#img45"><img src="assets\IMG_4111.jpg"></a></div></li>
-
-			<li><div id="id_46"><a href="#img46"><img src="assets\2168.png"></a></div></li>
-
-			<li><div id="id_47"><a href="#img47"><img src="assets\75832223.png"></a></div></li>
-
-			<li><div id="id_48"><a href="#img48"><img src="assets\35185996.png"></a></div></li>
-
-			<li><div id="id_49"><a href="#img49"><img src="assets\13549662.png"></a></div></li>
-
-			<li><div id="id_50"><a href="#img50"><img src="assets\1354889.png"></a></div></li>
-
-			<li><div id="id_51"><a href="#img51"><img src="assets\204.jpg"></a></div></li>
-
-			<li><div id="id_52"><a href="#img52"><img src="assets\442.jpg"></a></div></li>
-
-			<li><div id="id_53"><a href="#img53"><img src="assets\158.jpg"></a></div></li>
-
-			<li><div id="id_54"><a href="#img54"><img src="assets\852.jpg"></a></div></li>
-
-			<li><div id="id_55"><a href="#img55"><img src="assets\624.jpg"></a></div></li>
-
-			<li><div id="id_56"><a href="#img56"><img src="assets\846.jpg"></a></div></li>
-
-			<li><div id="id_57"><a href="#img57"><img src="assets\957.jpg"></a></div></li>
-
-			<li><div id="id_58"><a href="#img58"><img src="assets\325.jpg"></a></div></li>
-
-			<li><div id="id_59"><a href="#img59"><img src="assets\156.jpg"></a></div></li>
-
-			<li><div id="id_60"><a href="#img60"><img src="assets\185.jpg"></a></div></li>
-
-			<li><div id="id_61"><a href="#img61"><img src="assets\415.jpeg"></a></div></li>
-
-			<li><div id="id_62"><a href="#img62"><img src="assets\424.jpeg"></a></div></li>
-
-			<li><div id="id_63"><a href="#img63"><img src="assets\428.jpeg"></a></div></li>
-
-			<li><div id="id_64"><a href="#img64"><img src="assets\436.jpeg"></a></div></li>
-
-			<li><div id="id_65"><a href="#img65"><img src="assets\443.jpeg"></a></div></li>
-
-			<li><div id="id_66"><a href="#img66"><img src="assets\445.jpeg"></a></div></li>
-
-			<li><div id="id_67"><a href="#img67"><img src="assets\448.jpeg"></a></div></li>
-
-			<li><div id="id_68"><a href="#img68"><img src="assets\482.jpeg"></a></div></li>
-
-			<li><div id="id_69"><a href="#img69"><img src="assets\202.jpg"></a></div></li>
-			</ul>
-
-			<!--Estilos modal-->
-
-			<div class="modal" id="img1">
-			<div class="image">
-				<div class="imagen">
-					<a href="#img69" title="ver anterior">&#60;</a>
-					<div><img src="assets\Tsuki.png"></div>
-					<a href="#img2" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_1">X</a>
-			</div>
-			</div>
-
-			
-			<div class="modal" id="img2">
-			<div class="image">
-				<div class="imagen">
-					<a href="#img1" title="ver anterior">&#60;</a>
-					<div><img src="assets\IMG_2246.jpg"></div>
-					<a href="#img3" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_2">X</a>
-			</div>
-			</div>
-
-			
-			<div class="modal" id="img3">
-			<div class="image">
-				<div class="imagen">
-					<a href="#img2" title="ver anterior">&#60;</a>
-					<div><img src="assets\IMG_0004.jpg"></div>
-					<a href="#img4" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_3">X</a>
-			</div>
-			</div>
-
-			
-			<div class="modal" id="img4">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img3" title="ver anterior">&#60;</a>
-					<div><img src="assets\tsuki en casita.png"></div>
-					<a href="#img5" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_4">X</a>
-			</div>
-			</div>
-
-			
-			<div class="modal" id="img5">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img4" title="ver anterior">&#60;</a>
-					<div><img src="assets\tsuki_en_silla.png"></div>
-					<a href="#img6" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_5">X</a>
-			</div>
-			</div>
-
-			
-			<div class="modal" id="img6">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img5" title="ver anterior">&#60;</a>
-					<div><img src="assets\follow_tsuki.png"></div>
-					<a href="#img7" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_6">X</a>
-			</div>
-			</div>
-
-			<div class="modal" id="img7">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img6" title="ver anterior">&#60;</a>
-					<div><img src="assets\582632539.jpg"></div>
-					<a href="#img8" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_7">X</a>
-			</div>
-		</div>
-
-			<div class="modal" id="img8">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img7" title="ver anterior">&#60;</a>
-					<div><img src="assets\20151125.jpg"></div>
-					<a href="#img9" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_8">X</a>
-			</div>
-			</div>
-
-			<div class="modal" id="img9">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img8" title="ver anterior">&#60;</a>
-					<div><img src="assets\20151007_131549.jpg"></div>
-					<a href="#img10" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_9">X</a>
-			</div>
-		</div>
-
-			<div class="modal" id="img10">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img9" title="ver anterior">&#60;</a>
-					<div><img src="assets\20150917_111840.jpg"></div>
-					<a href="#img11" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_10">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img11">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img10" title="ver anterior">&#60;</a>
-					<div><img src="assets\20150917_104019.jpg"></div>
-					<a href="#img12" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_11">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img12">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img11" title="ver anterior">&#60;</a>
-					<div><img src="assets\20150908_181704.jpg"></div>
-					<a href="#img13" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_12">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img13">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img12" title="ver anterior">&#60;</a>
-					<div><img src="assets\20150608_185054.jpg"></div>
-					<a href="#img14" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_13">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img14">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img13" title="ver anterior">&#60;</a>
-					<div><img src="assets\20150525_193052.jpg"></div>
-					<a href="#img15" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_14">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img15">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img14" title="ver anterior">&#60;</a>
-					<div><img src="assets\20150525_192845b.jpg"></div>
-					<a href="#img16" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_15">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img16">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img15" title="ver anterior">&#60;</a>
-					<div><img src="assets\20150413_190207.jpg"></div>
-					<a href="#img17" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_16">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img17">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img16" title="ver anterior">&#60;</a>
-					<div><img src="assets\20150310_101514.jpg"></div>
-					<a href="#img18" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_17">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img18">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img17" title="ver anterior">&#60;</a>
-					<div><img src="assets\75811394824_28549.jpg"></div>
-					<a href="#img19" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_18">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img19">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img18" title="ver anterior">&#60;</a>
-					<div class="modal_logo"><img src="assets\303.jpg"></div>
-					<a href="#img20" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_19">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img20">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img19" title="ver anterior">&#60;</a>
-					<div><img src="assets\tsuki_nariz_al_aire.png"></div>
-					<a href="#img21" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_20">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img21">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img20" title="ver anterior">&#60;</a>
-					<div><img src="assets\8529826.jpg"></div>
-					<a href="#img22" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_21">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img22">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img21" title="ver anterior">&#60;</a>
-					<div><img src="assets\2328684.jpg"></div>
-					<a href="#img23" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_22">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img23">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img22" title="ver anterior">&#60;</a>
-					<div><img src="assets\8547439.jpg"></div>
-					<a href="#img24" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_23">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img24">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img23" title="ver anterior">&#60;</a>
-					<div><img src="assets\728603.jpg"></div>
-					<a href="#img25" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_24">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img25">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img24" title="ver anterior">&#60;</a>
-					<div><img src="assets\21348684.jpg"></div>
-					<a href="#img26" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_25">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img26">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img25" title="ver anterior">&#60;</a>
-					<div><img src="assets\753159.jpg"></div>
-					<a href="#img27" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_26">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img27">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img26" title="ver anterior">&#60;</a>
-					<div><img src="assets\185276.jpg"></div>
-					<a href="#img28" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_27">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img28">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img27" title="ver anterior">&#60;</a>
-					<div><img src="assets\59229.jpg"></div>
-					<a href="#img29" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_28">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img29">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img28" title="ver anterior">&#60;</a>
-					<div><img src="assets\29849.jpg"></div>
-					<a href="#img30" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_29">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img30">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img29" title="ver anterior">&#60;</a>
-					<div><img src="assets\579138.jpg"></div>
-					<a href="#img31" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_30">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img31">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img30" title="ver anterior">&#60;</a>
-					<div><img src="assets\24183866.jpg"></div>
-					<a href="#img32" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_31">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img32">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img31" title="ver anterior">&#60;</a>
-					<div><img src="assets\8216832465.jfif"></div>
-					<a href="#img33" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_32">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img33">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img32" title="ver anterior">&#60;</a>
-					<div><img src="assets\IMG_4112.jpg"></div>
-					<a href="#img34" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_33">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img34">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img33" title="ver anterior">&#60;</a>
-					<div><img src="assets\IMG_4108.jpg"></div>
-					<a href="#img35" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_34">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img35">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img34" title="ver anterior">&#60;</a>
-					<div><img src="assets\IMG_4116.jpg"></div>
-					<a href="#img36" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_35">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img36">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img35" title="ver anterior">&#60;</a>
-					<div><img src="assets\IMG_4110.jpg"></div>
-					<a href="#img37" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_36">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img37">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img36" title="ver anterior">&#60;</a>
-					<div><img src="assets\IMG_4120.jpg"></div>
-					<a href="#img38" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_37">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img38">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img37" title="ver anterior">&#60;</a>
-					<div><img src="assets\78693125786.jpg"></div>
-					<a href="#img39" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_38">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img39">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img38" title="ver anterior">&#60;</a>
-					<div><img src="assets\46463315.png"></div>
-					<a href="#img40" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_39">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img40">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img39" title="ver anterior">&#60;</a>
-					<div><img src="assets\95315664.png"></div>
-					<a href="#img41" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_40">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img41">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img40" title="ver anterior">&#60;</a>
-					<div><img src="assets\49653298.jpg"></div>
-					<a href="#img42" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_41">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img42">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img41" title="ver anterior">&#60;</a>
-					<div><img src="assets\753229319.jpg"></div>
-					<a href="#img43" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_42">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img43">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img42" title="ver anterior">&#60;</a>
-					<div><img src="assets\613138486.png"></div>
-					<a href="#img44" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_43">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img44">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img43" title="ver anterior">&#60;</a>
-					<div><img src="assets\8264843.png"></div>
-					<a href="#img45" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_44">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img45">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img44" title="ver anterior">&#60;</a>
-					<div><img src="assets\IMG_4111.jpg"></div>
-					<a href="#img46" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_45">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img46">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img45" title="ver anterior">&#60;</a>
-					<div><img src="assets\2168.png"></div>
-					<a href="#img47" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_46">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img47">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img46" title="ver anterior">&#60;</a>
-					<div><img src="assets\75832223.png"></div>
-					<a href="#img48" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_47">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img48">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img47" title="ver anterior">&#60;</a>
-					<div><img src="assets\35185996.png"></div>
-					<a href="#img49" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_48">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img49">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img48" title="ver anterior">&#60;</a>
-					<div><img src="assets\13549662.png"></div>
-					<a href="#img50" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_49">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img50">
-				<div class="image">
-				<div class="imagen">
-					<a href="#img49" title="ver anterior">&#60;</a>
-					<div><img src="assets\1354889.png"></div>
-					<a href="#img51" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_50">X</a>
-			</div>
-		</div>
-
-		<div class="modal" id="img51">
-			<div class="image">
-				<div class="imagen">
-					<a href="#img50" title="ver anterior">&#60;</a>
-					<div><img src="assets\204.jpg"></div>
-					<a href="#img52" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_51">X</a>
-			</div>
-			</div>
-
-			<div class="modal" id="img52">
-			<div class="image">
-				<div class="imagen">
-					<a href="#img51" title="ver anterior">&#60;</a>
-					<div><img src="assets\442.jpg"></div>
-					<a href="#img53" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_52">X</a>
-			</div>
-			</div>
-
-			<div class="modal" id="img53">
-			<div class="image">
-				<div class="imagen">
-					<a href="#img52" title="ver anterior">&#60;</a>
-					<div><img src="assets\158.jpg"></div>
-					<a href="#img54" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_53">X</a>
-			</div>
-			</div>
-
-			<div class="modal" id="img54">
-			<div class="image">
-				<div class="imagen">
-					<a href="#img53" title="ver anterior">&#60;</a>
-					<div><img src="assets\852.jpg"></div>
-					<a href="#img55" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_54">X</a>
-			</div>
-			</div>
-
-			<div class="modal" id="img55">
-			<div class="image">
-				<div class="imagen">
-					<a href="#img54" title="ver anterior">&#60;</a>
-					<div><img src="assets\624.jpg"></div>
-					<a href="#img56" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_55">X</a>
-			</div>
-			</div>
-
-			<div class="modal" id="img56">
-			<div class="image">
-				<div class="imagen">
-					<a href="#img55" title="ver anterior">&#60;</a>
-					<div><img src="assets\846.jpg"></div>
-					<a href="#img57" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_56">X</a>
-			</div>
-			</div>
-
-			<div class="modal" id="img57">
-			<div class="image">
-				<div class="imagen">
-					<a href="#img56" title="ver anterior">&#60;</a>
-					<div><img src="assets\957.jpg"></div>
-					<a href="#img58" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_57">X</a>
-			</div>
-			</div>
-
-			<div class="modal" id="img58">
-			<div class="image">
-				<div class="imagen">
-					<a href="#img57" title="ver anterior">&#60;</a>
-					<div><img src="assets\325.jpg"></div>
-					<a href="#img59" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_58">X</a>
-			</div>
-			</div>
-
-			<div class="modal" id="img59">
-			<div class="image">
-				<div class="imagen">
-					<a href="#img58" title="ver anterior">&#60;</a>
-					<div><img src="assets\156.jpg"></div>
-					<a href="#img60" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_59">X</a>
-			</div>
-			</div>
-
-			<div class="modal" id="img60">
-			<div class="image">
-				<div class="imagen">
-					<a href="#img59" title="ver anterior">&#60;</a>
-					<div><img src="assets\185.jpg"></div>
-					<a href="#img61" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_60">X</a>
-			</div>
-			</div>
-
-			<div class="modal" id="img61">
-			<div class="image">
-				<div class="imagen">
-					<a href="#img60" title="ver anterior">&#60;</a>
-					<div><img src="assets\415.jpeg"></div>
-					<a href="#img62" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_61">X</a>
-			</div>
-			</div>
-
-			<div class="modal" id="img62">
-			<div class="image">
-				<div class="imagen">
-					<a href="#img61" title="ver anterior">&#60;</a>
-					<div><img src="assets\424.jpeg"></div>
-					<a href="#img63" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_62">X</a>
-			</div>
-			</div>
-
-			<div class="modal" id="img63">
-			<div class="image">
-				<div class="imagen">
-					<a href="#img62" title="ver anterior">&#60;</a>
-					<div><img src="assets\428.jpeg"></div>
-					<a href="#img64" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_63">X</a>
-			</div>
-			</div>
-
-			<div class="modal" id="img64">
-			<div class="image">
-				<div class="imagen">
-					<a href="#img63" title="ver anterior">&#60;</a>
-					<div><img src="assets\436.jpeg"></div>
-					<a href="#img65" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_64">X</a>
-			</div>
-			</div>
-
-			<div class="modal" id="img65">
-			<div class="image">
-				<div class="imagen">
-					<a href="#img64" title="ver anterior">&#60;</a>
-					<div><img src="assets\443.jpeg"></div>
-					<a href="#img66" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_65">X</a>
-			</div>
-			</div>
-
-			<div class="modal" id="img66">
-			<div class="image">
-				<div class="imagen">
-					<a href="#img65" title="ver anterior">&#60;</a>
-					<div><img src="assets\445.jpeg"></div>
-					<a href="#img67" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_66">X</a>
-			</div>
-			</div>
-
-			<div class="modal" id="img67">
-			<div class="image">
-				<div class="imagen">
-					<a href="#img66" title="ver anterior">&#60;</a>
-					<div><img src="assets\448.jpeg"></div>
-					<a href="#img68" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_67">X</a>
-			</div>
-			</div>
-
-			<div class="modal" id="img68">
-			<div class="image">
-				<div class="imagen">
-					<a href="#img67" title="ver anterior">&#60;</a>
-					<div><img src="assets\482.jpeg"></div>
-					<a href="#img69" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_68">X</a>
-			</div>
-			</div>
-
-			<div class="modal" id="img69">
-			<div class="image">
-				<div class="imagen">
-					<a href="#img68" title="ver anterior">&#60;</a>
-					<div><img src="assets\202.jpg"></div>
-					<a href="#img1" title="ver siguiente">></a>
-				</div>
-				<a class="cerrar" title="cerrar" href="#id_69">X</a>
-			</div>
-			</div>
-	</article>
-
-	<footer>
-		<p>Alex Otero - <script src="js/date.js"></script> Copyright &copy;. Todos los derechos reservados</p>
 	</footer>
 	<!--Modo Oscuro-->
 	<script src="js/main.js"></script>
