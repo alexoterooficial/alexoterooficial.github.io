@@ -37,64 +37,6 @@ body {
   transition: 0.6s;
 }
 
-@keyframes vanish {
-	100% {
-		opacity: 0;
-		visibility: hidden;
-	}
-}
-
-.ring_loader {
-	position: fixed;
-	top: 0;
-	left: 0;
-	background: #409E98;
-	height: 100%;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	z-index: 150;
-}
-
-.ring {
-	position: absolute;
-	border-radius: 100%;
-}
-
-.ring:nth-child(1) {
-	width: 210px;
-	height: 210px;
-	border-top: 3px solid #44EFC8;
-	transform: rotate(360deg);
-	animation: rotate-forward 1.3s linear infinite;
-}
-
-.loading_text {
-	position: absolute;
-	font-size: 22px;
-	color: #fff;
-	font-family: 'Roboto', sans-serif;
-	font-style: italic;
-	display: flex;
-	flex-direction: column;
-}
-
-.loading_logo {
-	height: 100px;
-	object-fit: contain;
-}
-
-@keyframes rotate-forward {
-	0% {
-		transform: rotate(0deg);
-	}
-
-	100% {
-		transform: rotate(360deg);
-	}
-}
-
 header {
 	position: fixed;
 	top: 0;
