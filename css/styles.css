@@ -123,7 +123,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 4% 0;
 	font-size: 150%;
 	font-family: 'Alex';
-	color: #000;
 }
 
 h2 {
@@ -178,6 +177,8 @@ strong:hover {
 .text {
 	width: 80%;
 	margin: 0% 10% 3% 10%;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #000;
 }
 
 .slider_container {
@@ -464,27 +465,27 @@ div.social_media_buttons {
   transform: translateY(-10%);
 }
 
-.wrapper .button:nth-child(1):hover .icon{
+.wrapper .button:nth-child(1) .icon{
   background: #4267B2;
 }
 
-.wrapper .button:nth-child(2):hover .icon{
+.wrapper .button:nth-child(2) .icon{
   background: #1DA1F2;
 }
 
-.wrapper .button:nth-child(3):hover .icon{
+.wrapper .button:nth-child(3) .icon{
   background: #E1306C;
 }
 
-.wrapper .button:nth-child(4):hover .icon{
+.wrapper .button:nth-child(4) .icon{
   background: #000000;
 }
 
-.wrapper .button:nth-child(5):hover .icon{
+.wrapper .button:nth-child(5) .icon{
   background: #ff0000;
 }
 
-.wrapper .button:nth-child(6):hover .icon{
+.wrapper .button:nth-child(6) .icon{
   background: #EA45F0;
 }
 
@@ -494,7 +495,7 @@ div.social_media_buttons {
   transition: all 0.3s ease-out;
 }
 
-.wrapper .button:hover .icon i{
+.wrapper .button .icon i{
   color: #fff;
 }
 
@@ -557,22 +558,6 @@ i.tsuki {
 
 body.dark {
   background: #111111;
-}
-
-body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark h6 {
-  color: #C8C8C8;
-}
-
-body.dark .ring:nth-child(1) {
-	border-top: 3px solid #409E98;
-}
-
-body.dark .loading_text {
-	color: #C8C8C8;
-}
-
-body.dark .ring_loader {
-	background: #222;
 }
 
 body.dark header {
