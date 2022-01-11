@@ -314,6 +314,19 @@ button.btn:focus {
   outline-width: unset;
 }
 
+.web_logo_container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.web_logo {
+	height: 45vh;
+	width: 45vh;
+	object-fit: contain;
+}
+
 .galeria ul li {
   width: 0px;
   height: 300px;
