@@ -55,6 +55,8 @@ header {
 	z-index: 2;
 	flex-wrap: nowrap;
 	flex-direction: column;
+	-webkit-box-shadow: 0px 5px 20px rgb(0 0 0 / 16%);
+          box-shadow: 0px 5px 20px rgb(0 0 0 / 16%);
 }
 
 header.sticky {
@@ -580,8 +582,6 @@ body.dark {
 
 body.dark header {
   background: #222222;
-  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
-          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
 }
 
 body.dark a.nav_li {
