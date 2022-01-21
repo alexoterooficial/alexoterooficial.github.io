@@ -37,6 +37,10 @@ body {
   transition: 0.6s;
 }
 
+html.galeria_html {
+	scroll-padding-top: 220px;
+}
+
 header {
 	position: fixed;
 	top: 0;
