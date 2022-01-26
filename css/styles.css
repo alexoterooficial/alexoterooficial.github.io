@@ -449,6 +449,13 @@ div.social_media_buttons {
 	}
 }
 
+@media (min-width: 1440px) {
+	div.social_media_buttons, footer > p {
+		margin: 2% 40% 0% 40%;
+		width: fit-content;
+	}
+}
+
 .wrapper {
   display: flex;
   flex-direction: row;
