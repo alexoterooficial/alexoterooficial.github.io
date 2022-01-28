@@ -348,7 +348,7 @@ button.btn:focus {
 	position: fixed;
 	z-index: 2;
 	transition: all .5s ease;
-	transform: translate(-89%);
+	transform: translate(-90%);
 }
 
 #tip_button {
@@ -362,6 +362,8 @@ button.btn:focus {
 .tip_icon {
 	height: 3.5vh;
 	margin: 0vh 1vh;
+	border-left: #000 solid 1px;
+	padding: 0 0 0 1vh;
 }
 
 .tip p {
