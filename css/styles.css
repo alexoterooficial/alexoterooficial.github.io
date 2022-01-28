@@ -378,6 +378,10 @@ button.btn:focus {
 	line-height: 130%;
 }
 
+.tip > p {
+	margin: 0 1vh 0 0;
+}
+
 .galeria ul li {
   width: 0px;
   height: 300px;
