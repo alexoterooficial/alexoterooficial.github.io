@@ -355,6 +355,10 @@ button.btn:focus {
 	cursor: pointer;
 }
 
+.tip_button_div {
+	display: flex;
+}
+
 .tip.active {
 	transform: translate(0%);
 }
