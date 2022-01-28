@@ -351,7 +351,7 @@ button.btn:focus {
 	transform: translate(-89%);
 }
 
-#tip {
+#tip_button {
 	cursor: pointer;
 }
 
