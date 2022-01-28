@@ -114,7 +114,7 @@ header ul li a:hover, a:focus {
 	object-fit: contain;
 }
 
-header > a {
+header > li a {
 	margin: 0 0 0 2%;
 }
 
