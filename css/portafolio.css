@@ -38,8 +38,14 @@ body {
 }
 
 html {
-	scroll-padding-top: 130px;
+	scroll-padding-top: 100px;
 	scroll-behavior: smooth;
+}
+
+@media (max-width: 374px) {
+	html {
+		scroll-padding-top: 120px;
+	}
 }
 
 header {
@@ -51,7 +57,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	transition: .8s;
-	padding: 30px 2%;
+	padding: 10px 2%;
 	background: #0000;
 	z-index: 2;
 	flex-wrap: nowrap;
@@ -126,13 +132,14 @@ header > li a {
 
 .inicio {
 	color: #fff;
-	background: linear-gradient(to right, #409E98CC, #409E98CC),url(../assets/bg_img.svg);
+	background: linear-gradient(to right, #409E98bd, #409E98bd),url(../assets/bg_img.svg);
 	background-position: center;
 	height: 105vh;
 	position: relative;
 }
 
 .inicio_content {
+	height: 85vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -162,6 +169,7 @@ header > li a {
 	--animation-delay: var(--delay, 0s);
 	--animation-duration: var(--duration, 800ms);
 	--animation-iterations: var(--iterations, 1);
+	margin: -6% 0 0 0;
 	position: relative;
 	font-family: 'Alex';
 	font-size: 10vmin;
@@ -229,7 +237,6 @@ header > li a {
 	padding: 5% 0 0 0;
 	background: #44EFC8;
 	width: 100%;
-	height: 105vh;
 	position: relative;
 }
 
@@ -245,11 +252,12 @@ p {
 }
 
 .text {
-	margin: 0 0 0 5%;
+	width: 80%;
+	margin: 0% 10% 3% 10%;
 }
 
 .tools {
-	margin: 0 0 0 6%;
+	margin: 2.5% 0 2.5% 0;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
