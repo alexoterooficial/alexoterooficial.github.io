@@ -234,8 +234,15 @@ header > li a {
 }
 
 .conocimientos {
-	padding: 5% 0 0 0;
 	background: #44EFC8;
+}
+
+.proyectos {
+	background: #3be6bf;
+}
+
+.conocimientos, .proyectos, .contacto {
+	padding: 5% 0 3% 0;
 	width: 100%;
 	position: relative;
 }
@@ -253,7 +260,7 @@ p {
 
 .text {
 	width: 80%;
-	margin: 0% 10% 3% 10%;
+	margin: 0% 10% 0% 10%;
 }
 
 .tools {
