@@ -238,7 +238,12 @@ header > li a {
 }
 
 .proyectos {
-	background: #3be6bf;
+	background: #70b6b1;
+}
+
+div.contacto {
+	background: #3c8d89;
+	padding: 5% 0 5% 0;
 }
 
 .conocimientos, .proyectos, .contacto {
@@ -261,6 +266,17 @@ p {
 .text {
 	width: 80%;
 	margin: 0% 10% 0% 10%;
+}
+
+.contacto > .text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.contacto > .text > p {
+	font-size: 150%;
 }
 
 .tools {
@@ -297,8 +313,192 @@ p {
 .projects {
 	position: relative;
 	border: none;
-	top: 10.4%;
-	left: 14.8%;
-	width: 70.6%;
-	height: 74%;
+	top: 7%;
+	left: 12.42%;
+	width: 75.4%;
+	height: 81.7%;
+}
+
+.proyectos {
+	height: 105vh;
+}
+
+.contact_card {
+	height: 40vh; /*130px;*/
+	width: 40vh;/*130px;*/
+	background: #eaeaea;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 5px solid #fff;
+	box-shadow: 0px 2px 10px rgb(0 0 0 / 25%);
+}
+
+.icon-fb {
+	height: 35%;
+	margin: 0 0 0 6%;
+	color: #4267B2;
+}
+
+.contact {
+	margin: 5% 5% 0% 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact_card:hover {
+	box-shadow: 5px 5px 20px rgb(0 0 0 / 40%);
+  transform: translateY(-3%);
+}
+
+footer {
+	padding: 5% 0%;
+	text-align: left;
+	background: #409E98;
+	width: 100%;
+	color: #FFF;
+}
+
+footer > p {
+	margin: 0% 30%;
+}
+
+div.social_media_buttons {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  width: 55%;
+ 	margin: 2% 30% 0% 30%;
+}
+
+@media (max-width: 1024px) {
+	div.social_media_buttons {
+		margin: 2% 25% 0% 25%;
+	}
+}
+
+@media (min-width: 1440px) {
+	div.social_media_buttons, footer > p {
+		margin: 2% 40% 0% 40%;
+		width: fit-content;
+	}
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.wrapper .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  background: #fff;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover {
+	box-shadow: 5px 5px 20px rgb(0 0 0 / 40%);
+  transform: translateY(-10%);
+}
+
+.wrapper .button:nth-child(1) .icon{
+  background: #4267B2;
+}
+
+.wrapper .button:nth-child(2) .icon{
+  background: #1DA1F2;
+}
+
+.wrapper .button:nth-child(3) .icon{
+  background: #E1306C;
+}
+
+.wrapper .button:nth-child(4) .icon{
+  background: #000000;
+}
+
+.wrapper .button:nth-child(5) .icon{
+  background: #ff0000;
+}
+
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button .icon i{
+  color: #fff;
+}
+
+div.icon {
+  color: #000000;
+}
+
+.symbols {
+  height: 25px;
+  width: 30px;
+}
+
+i.facebook {
+  height: 56px;
+  width: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i.twitter {
+  height: 59px;
+  width: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i.instagram {
+  height: 59px;
+  width: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i.tiktok {
+  height: 59px;
+  width: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i.youtube {
+  height: 59px;
+  width: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
