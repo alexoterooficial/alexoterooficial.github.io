@@ -669,6 +669,7 @@ body.dark .slider {
 }
 
 .switch {
+  margin: 2.5px 15px;
   background: #343D5B;
   border-radius: 1000px;
   border: none;
