@@ -225,11 +225,18 @@ strong:hover {
   animation: slide 40s infinite;
 }
 
+.slider > ul > li {
+  height: 300px;
+  width: 300px;
+}
+
 .slider > ul > li > img {
-	object-fit: contain;
-	width: 300px;
+  object-fit: contain;
+  width: 300px;
   height: 300px;
   margin: 0px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
 }
 
 @keyframes slide {
