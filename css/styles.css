@@ -109,6 +109,10 @@ header ul li a:hover, a:focus {
 	background-size: 100% 2px;
 }
 
+.logo_a {
+  height: 81px;
+}
+
 .header_logo {
 	height: 77px;
 	object-fit: contain;
