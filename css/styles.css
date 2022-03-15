@@ -188,6 +188,11 @@ strong:hover {
 	text-shadow: 1px 1px 1px #000;
 }
 
+img {
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
 .slider_container {
 	width: 80%;
   margin: 0% 10%;
@@ -235,8 +240,6 @@ strong:hover {
   width: 300px;
   height: 300px;
   margin: 0px;
-  color: #fff;
-  text-shadow: 1px 1px 1px #000;
 }
 
 @keyframes slide {
