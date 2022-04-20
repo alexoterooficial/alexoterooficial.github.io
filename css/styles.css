@@ -735,8 +735,7 @@ i.sun, i.moon {
 }
 
 .switch.active::after {
-  right: 0;
-  left: unset;
+  transform: translateX(100%);
 }
 
 .switch span {
