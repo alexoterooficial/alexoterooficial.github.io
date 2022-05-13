@@ -50,18 +50,18 @@ header {
 	justify-content: center;
 	align-items: center;
 	transition: 0.4s;
-	padding: 30px 0px;
+	padding: 30px 2%;
 	background: #409E98;
 	z-index: 2;
 	flex-wrap: nowrap;
 	flex-direction: column;
 	-webkit-box-shadow: 0px 5px 20px rgb(0 0 0 / 16%);
-          box-shadow: 0px 5px 20px rgb(0 0 0 / 16%);
+  box-shadow: 0px 5px 20px rgb(0 0 0 / 16%);
   max-height: 200px;
 }
 
 header.sticky {
-	padding: 10px 0px;
+	padding: 10px 2%;
 }
 
 header.sticky ul li a {
@@ -109,21 +109,110 @@ header ul li a:hover, a:focus {
 	background-size: 100% 2px;
 }
 
+.space {
+  margin: 220px 0 0 0;
+}
+
+@media (max-width: 480px){
+  header ul#menu.menu_list {
+    visibility: visible;
+    display: block;
+    opacity: 1;
+  }
+
+  svg#menu_icon.menu_icon {
+    visibility: visible;
+    display: block;
+    opacity: 1;
+  }
+
+  header ul#menu_list-no_mobile.menu_list-no_mobile {
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .space {
+    margin: 170px 0 0 0;
+  }
+}
+
+header ul#menu {
+  background: #409E98;
+  box-shadow: -1px 1px 10px rgb(0 0 0 / 25%);
+  height: 100vh;
+  width: 50vh;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+}
+
+.menu_icon {
+  cursor: pointer;
+  width: 6vh;
+  height: 6vh;
+  fill: #fff;
+  z-index: 3;
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+}
+
+.menu_icon > rect {
+  transition: transform 250ms,opacity 250ms;
+}
+
+.menu_icon.cross > rect:nth-child(1) {
+  transform: translateX(23px) translateY(2px) rotate(45deg);;
+}
+
+.menu_icon.cross > rect:nth-child(2) {
+  opacity: 0;
+}
+
+.menu_icon.cross > rect:nth-child(3) {
+  transform: translateX(-34px) translateY(30px) rotate(-45deg);
+}
+
+.menu_list {
+  transform: translateX(120%);
+  transition: all .5s ease;
+}
+
+.menu_list.active_menu {
+  transform: translateX(0%);
+}
+
+ul.menu_list li:nth-child(1) {
+  margin: 30% 0 0 0;
+}
+
 .logo_a {
   height: 81px;
 }
 
 .header_logo {
 	height: 77px;
+  width: fit-content;
 	object-fit: contain;
 }
 
 header > li a {
 	margin: 0 0 0 2%;
-}
-
-.space {
-	margin: 220px 0 0 0;
 }
 
 footer {
@@ -651,7 +740,7 @@ body.dark {
   background: #111111;
 }
 
-body.dark header {
+body.dark header, body.dark header ul#menu {
   background: #222222;
 }
 
