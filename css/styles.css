@@ -243,14 +243,10 @@ footer {
 	color: #FFF;
 }
 
-footer > p {
-  margin: 0% 30%;
-}
-
 .copyright {
   display: inline-block;
   position: relative;
-  margin: 0 0 3vh 0;
+  margin: 0 30% 3vh 30%;
 }
 
 .ir-arriba {
