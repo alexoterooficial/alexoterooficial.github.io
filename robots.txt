@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Disallow: portafolio.html
+Sitemap: https://alexoterooficial.github.io/sitemap.xml
