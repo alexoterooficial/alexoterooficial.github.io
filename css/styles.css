@@ -93,11 +93,11 @@ header ul li a {
 	cursor: pointer;
 	font-family: 'Alex';
 	text-decoration: none;
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .3s;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
 }
 
 header ul li a:hover {
@@ -241,6 +241,10 @@ footer {
 	margin: 5% 0 0 0;  
 	width: 100%;
 	color: #FFF;
+}
+
+footer > p {
+  margin: 0% 30%;
 }
 
 .copyright {
