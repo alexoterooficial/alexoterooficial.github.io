@@ -5,14 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portafolio | Alex Otero</title>
 	<link rel="stylesheet" href="css/portafolio.css">
-	<script src="js/header_script.js"></script>
-	<script src="js/scroll.js"></script>
-	<link rel="shortcut icon" href="assets/Logo.png" type="image/x-icon">
+	<script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="https://alexoterooficial.github.io/assets/Logo.png">
+	<link rel="apple-touch-icon" href="https://alexoterooficial.github.io/assets/Logo.png">
 </head>
 <body>
 
 	<header>
-		<a href="https://alexoterooficial.github.io/index"><img src="assets\Alex_Otero-Logo.png" width="100" alt="Logo" class="header_logo"></a>
+		<a href="https://alexoterooficial.github.io/index"><img src="https://alexoterooficial.github.io/assets\Alex_Otero-Logo.png" width="100" alt="Logo" class="header_logo"></a>
 		<ul>
 			<li><a onclick="inicio()">Inicio</a></li>
 			<li><a onclick="conocimientos()">Conocimientos</a></li>
@@ -26,7 +27,7 @@
 	<div class="inicio" id="inicio">
 		<div class="inicio_content">
 			<div class="space"></div>
-			<img src="assets/Alex_Otero-Logo.png" alt="">
+			<img src="https://alexoterooficial.github.io/assets/Alex_Otero-Logo.png" alt="">
 			<p class="reveal-text">Portafolio</p>
 			<a onclick="conocimientos()" class="arrow_margin">
 				<i class="arrow"></i>
@@ -103,7 +104,7 @@
 	</div>
 
 	<footer>
-		<p>Alex Otero - <script src="js/date.js"></script> Copyright ©. Todos los derechos reservados</p>
+		<p class="copyright"></p>
 		<div class="social_media_buttons">
 			<div class="wrapper">
 
@@ -160,6 +161,8 @@
 			</div>
 		</div>
 	</footer>
+
+	<script src="js/second.js"></script>
 
 </body>
 </html>
