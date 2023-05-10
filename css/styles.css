@@ -396,6 +396,19 @@ img {
   flex-wrap: wrap;
 }
 
+.tsuki_container h2 {
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  margin: 2vh 0;
+}
+
+.tsuki_img {
+  margin: 0 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 button.btn {
   margin-top: 19px;
   max-width: 290.8px;
