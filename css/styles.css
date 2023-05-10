@@ -436,6 +436,7 @@ button.btn:focus {
 }
 
 .web_logo_container {
+  margin: 8vh 0 0 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -443,9 +444,18 @@ button.btn:focus {
 }
 
 .web_logo {
-  height: 45vh;
-  width: 45vh;
+  height: 37vh;
+  width: 37vh;
   object-fit: contain;
+}
+
+path.logo_letters {
+  fill: #000;
+  transition: 0.6s;
+}
+
+body.dark path.logo_letters {
+  fill: #fff;
 }
 
 .tip {
