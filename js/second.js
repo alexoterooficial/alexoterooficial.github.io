@@ -1,216 +1,136 @@
-const btnSwitch = document.querySelector('#switch');
-const btnSwitchNoMobile = document.querySelector('#switch-no_mobile');
-
 const menu_icon = document.getElementById('menu_icon');
 const menu = document.getElementById('menu');
+const menuLinks = document.querySelectorAll('.menu-link');
+
 const copyright = document.querySelector('.copyright');
+const close_menu = document.getElementById('close_menu');
+const header_logo = document.querySelector('.header_logo');
 
-const tip = document.querySelector('#tip'),
-	tip_button = document.querySelector('#tip_button');
+const blurDivs = document.querySelectorAll('.blur-load');
 
-const irArriba = document.querySelector('.ir-arriba');
+blurDivs.forEach(blur_div => {
+	const img = blur_div.querySelector('img');
 
-const cnt = document.querySelector('.cnt');
-const slides = Array.from(document.querySelectorAll('.slide'));
-let isDragging = false,
-	startPos = 0,
-	currentTranslate = 0,
-	prevTranslate = 0,
-	animationID = 0,
-	sectionIndex = 0,
-	dotIndex = 0;
-let slider = document.querySelector('.slider');
-const dots = document.querySelector('.dots');
-
-if (slider) {
-
-	slides.forEach((slide, index) => {
-		const slideImage = slide.querySelector('img');
-		slideImage.addEventListener('dragstart', (e) => e.preventDefault());
-
-		slide.addEventListener('touchstart', touchStart(index));
-		slide.addEventListener('touchend', touchEnd);
-		slide.addEventListener('touchmove', touchMove);
-
-		slide.addEventListener('mousedown', touchStart(index));
-		slide.addEventListener('mouseup', touchEnd);
-		slide.addEventListener('mouseleave', touchEnd);
-		slide.addEventListener('mousemove', touchMove);
-	})
-
-	cnt.oncontextmenu = function(event) {
-		event.preventDefault();
-		event.stopPropagation();
-		return false;
+	function loaded() {
+		blur_div.classList.add('loaded');
 	}
 
-	const longPress = (el, callback, duration) => {
-		let timeout;
-		const start = () => {
-			timeout = window.setTimeout(callback, duration);
-		}
-
-		const end = () => {
-			window.clearTimeout(timeout);
-			cnt.classList.add('moving');
-		}
-
-		el.addEventListener('touchstart', start);
-		el.addEventListener('touchend', end);
-		el.addEventListener('mousedown', start);
-		el.addEventListener('mouseup', end);
-		el.addEventListener('mouseleave', end);
+	if (img.complete) {
+		loaded();
+	} 
+	else {
+		img.addEventListener('load', loaded);
 	}
+});
 
-	longPress(cnt, () => {
-		cnt.classList.remove('moving');
-	}, 150);
-
-	function touchStart(index){
-		return function(event) {
-			slider.classList.add('grabbing');
-			sectionIndex = index;
-			dotIndex = index;
-			startPos = getPositionX(event);
-			isDragging = true;
-			animationID = requestAnimationFrame(animation);
-		}
-	}
-
-	function touchEnd() {
-		isDragging = false;
-		cancelAnimationFrame(animationID);
-		const movedBy = currentTranslate - prevTranslate
-		if (movedBy < -100 && sectionIndex < slides.length - 1) {
-			sectionIndex += 1;
-			dots.children[dotIndex].classList.remove('active');
-			dotIndex += 1;
-			dots.children[dotIndex].classList.add('active');
-		}
-		if (movedBy > 100 && sectionIndex > 0) {
-			sectionIndex -= 1;
-			dots.children[dotIndex].classList.remove('active');
-			dotIndex -= 1;
-			dots.children[dotIndex].classList.add('active');
-		}
-		setPositionByIndex();
-		slider.classList.remove('grabbing');
-	}
-
-	function touchMove(event) {
-		if (isDragging) {
-			const currentPosition = getPositionX(event);
-			currentTranslate = prevTranslate + currentPosition - startPos;	
-			slider.classList.add('grabbing');
-		}
-	}
-
-	function getPositionX(event) {
-	  return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
-	}
-
-	function animation() {
-		setSliderPosition();
-		if (isDragging) requestAnimationFrame(animation)
-	}
-
-	function setSliderPosition() {
-		cnt.style.transform = `translateX(${currentTranslate}px)`;	
-	}
-
-	function setPositionByIndex() {
-		currentTranslate = sectionIndex * -slider.offsetWidth;
-		prevTranslate = currentTranslate;
-		setSliderPosition();
-	}
-
-	const cnt_sections = cnt.children.length;
-	setInterval(function(){
-		if (cnt.classList.contains('moving')){
-			sectionIndex = (sectionIndex < (cnt_sections - 1)) ? sectionIndex + 1 : 0;
-			dots.children[dotIndex].classList.remove('active');
-			dotIndex = (dotIndex < (cnt_sections - 1)) ? dotIndex + 1 : 0;
-			dots.children[dotIndex].classList.add('active');
-			cnt.style.transform = 'translateX(' + (sectionIndex) * (-100 / cnt_sections) + '%)';
-		}
-	}, 5000);
+const cargarElem = (entradas, observador) => {
+	entradas.forEach((entrada, index) => {
+	  if (entrada.isIntersecting) {
+		setTimeout(() => {
+			entrada.target.classList.add('inside');
+		}, index * 200); // Cada burbuja aparecerá 200 milisegundos después de la anterior
+	  }
+	});
 }
 
-if (btnSwitch) {
+const observador = new IntersectionObserver(cargarElem, {
+	root: null,
+	rootMargin: '0px 0px 0px 0px',
+	threshold: 0.2
+});
 
-	btnSwitch.addEventListener('click', () => {
-		document.body.classList.toggle('dark');
-		btnSwitch.classList.toggle('active');
-		btnSwitchNoMobile.classList.toggle('active');
-
-		if(document.body.classList.contains('dark')){
-			localStorage.setItem('dark-mode', 'true');
-		} else {
-			localStorage.setItem('dark-mode', 'false');
-		}
-	});
-
-	btnSwitchNoMobile.addEventListener('click', () => {
-		document.body.classList.toggle('dark');
-		btnSwitch.classList.toggle('active');
-		btnSwitchNoMobile.classList.toggle('active');
-
-		if(document.body.classList.contains('dark')){
-			localStorage.setItem('dark-mode', 'true');
-		} else {
-			localStorage.setItem('dark-mode', 'false');
-		}
-	});
-
-	if(localStorage.getItem('dark-mode') === 'true'){
-		document.body.classList.add('dark');
-		btnSwitch.classList.add('active');
-		btnSwitchNoMobile.classList.add('active');
-	} else {
-		document.body.classList.remove('dark');
-		btnSwitch.classList.remove('active');
-		btnSwitchNoMobile.classList.remove('active');
-	}
+let elemCounter = 0;
+while (elemCounter <= 10) {
+  var elemName = 'obv_element_' + elemCounter;
+  var elemNameid = document.getElementById(elemName);
+  if (elemNameid) {
+    observador.observe(elemNameid);
+  }
+  elemCounter++;
 }
 
-function menu_f(){
+// Obtenemos todos los enlaces del header
+const links = document.querySelectorAll('.header-link');
+const bubbles = document.querySelectorAll('.bubble');
+
+// Removemos el foco y el efecto hover al hacer clic en un enlace
+links.forEach(link => {
+  link.addEventListener('click', () => {
+	link.blur(); // Removemos el foco
+  });
+});
+
+// Removemos el foco y el efecto hover al hacer clic en un enlace
+bubbles.forEach(bubble => {
+	bubble.addEventListener('click', () => {
+	  bubble.blur(); // Removemos el foco
+	});
+});
+
+menuLinks.forEach(link => {
+	link.addEventListener('click', () => {
+	  	menu.classList.remove('active_menu');
+	  	menu_icon.classList.remove('cross');
+		close_menu.classList.remove('active');
+	});
+});
+
+// Obtén todos los enlaces de desplazamiento suave en tu página
+const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
+
+// Agrega un evento de clic a cada enlace
+smoothScrollLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault(); // Evita el comportamiento de desplazamiento predeterminado
+
+    const targetId = link.getAttribute('href'); // Obtiene el valor del atributo href del enlace
+    const targetElement = document.querySelector(targetId); // Obtiene el elemento al que se desea desplazar
+
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' }); // Desplazamiento suave hacia el elemento
+    }
+  });
+});
+
+function menu_icon_pressed() {
 	menu.classList.toggle('active_menu');
 	menu_icon.classList.toggle('cross');
+	close_menu.classList.toggle('active');
 }
 
-if (menu_icon) {	
-	menu_icon.addEventListener("keyup", function(event) {
-		if (event.keyCode === 13) {
-			event.preventDefault();
-			menu_f();
-		}
-	});
-}
+menu_icon.addEventListener("keyup", function(event) {
+	if (event.key === 'Enter') {
+		event.preventDefault();
+		menu_icon_pressed();
+	}
+});
+
+menu_icon.addEventListener('click', () => {
+	menu_icon_pressed();
+});
+
+close_menu.addEventListener('click', () => {
+	menu_icon_pressed();
+});
+
+header_logo.addEventListener('click', () => {
+	if (menu.classList.contains('active_menu')){
+		menu_icon_pressed();
+	}
+});
 
 copyright.innerHTML = 'Alex Otero - ' + new Date().getFullYear() + ' Copyright &copy;. Todos los derechos reservados';
 
-if (tip) {
-	tip_button.addEventListener('click', (e) =>{
-		tip.classList.toggle('active');
-	});
-}
+// Almacena la posición del desplazamiento al recargar la página
+window.addEventListener('beforeunload', function() {
+	localStorage.setItem('scrollPosition', window.scrollY);
+});
 
-if (irArriba){
-	$(document).ready(function(){
-
-		$('.ir-arriba').click(function(){
-			$('body, html').animate({
-				scrollTop: '0px'
-			},300 );
-		});
-
-		$(window).scroll(function(){
-			if ($(this).scrollTop() > 0){
-				$('.ir-arriba').slideDown(300);
-			} else {
-				$('.ir-arriba').slideUp(300);
-			};
-		});
-		
-	});
-}
+// Restaura la posición del desplazamiento al cargar la página
+window.addEventListener('load', function() {
+	var scrollPosition = localStorage.getItem('scrollPosition');
+	if (scrollPosition !== null) {
+		window.scrollTo(0, parseInt(scrollPosition, 10));
+		localStorage.removeItem('scrollPosition');
+	}
+});
