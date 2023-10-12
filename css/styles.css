@@ -98,7 +98,7 @@ header ul#menu {
   padding-top: 104px;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -100%;
   z-index: 2;
   visibility: hidden;
   display: none;
@@ -136,8 +136,9 @@ header ul#menu {
   transition: all .5s ease;
 }
 
-.menu_list.active_menu {
+header ul#menu.menu_list.active_menu {
   transform: translateX(0%);
+  right: 0;
 }
 
 .header_logo {
@@ -538,32 +539,11 @@ hr {
 
 /* Libro */
 
-.book_promo {
-  width: 100%;
-  height: 58vw;
-  max-height: 46rem;
-  background-image: url(../assets/book_promo_large.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  margin-bottom: 3rem;
-  transform: translateY(2rem);
-  opacity: 0;
-  transition: transform .5s, opacity 0.5s;
-}
-
-.book_promo h2 {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 22%;
-  padding-top: 9%;
-}
-
 .buttons-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 30px;
-  margin: 10% 19.5%;
+  margin: 2vh 0 0 0;
 }
 
 .buttons-container .symbols {
@@ -591,8 +571,32 @@ hr {
   fill: #fff;
 }
 
-.book-synopsis {
-  margin-bottom: 1rem;
+.card-book {
+  padding: 3vh;
+  position: relative;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  margin: 2vh;
+  margin: 2vh;
+}
+
+.erds {
+  background: #a2bcd7;
+}
+
+.esr {
+  background: #d1d1d4;
+}
+
+img.book_cover {
+  object-fit: contain;
+  width: 34.5%;
+}
+
+.book_info {
+  height: 100%;
+  margin: 0 0 0 -1vh;
 }
 
 /* Libro */
@@ -725,11 +729,14 @@ hr {
   .no-padding-bottom {
     padding-bottom: 0px;
   }
-  .book_promo h2 {
-    margin-right: 18%;
+  .card-book {
+    flex-direction: column;
   }
-  .buttons-container {
-    margin: 10% 18%;
+  img.book_cover {
+    width: 100%;
+    position: relative;
+    right: -3vw;
+    max-width: 60vh;
   }
 }
 
@@ -760,9 +767,6 @@ hr {
   .book_promo h2 {
     margin-right: 18%;
     font-size: 4.37vw;
-  }
-  .buttons-container {
-    margin: 5% 14%;
   }
   .amazon-button, .wattpad-button {
     width: 17vw;
